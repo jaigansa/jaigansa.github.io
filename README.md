@@ -1,3 +1,3 @@
 # Personal Portfolio Website
-[visit Me](https://www.jaigansa.me)
+[visit Me](https://jaigansa.github.io)
 ## thank you
