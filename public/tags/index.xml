@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tags on JAI GANESH</title>
+        <link>https://jaigansa.me/tags/</link>
+        <description>Recent content in Tags on JAI GANESH</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jaigansa.me/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>linux</title>
+        <link>https://jaigansa.me/tags/linux/</link>
+        <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://jaigansa.me/tags/linux/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>template</title>
+        <link>https://jaigansa.me/tags/template/</link>
+        <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://jaigansa.me/tags/template/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

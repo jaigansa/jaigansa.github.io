@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='how to use template folder'><title>Template</title>
+
+<link rel='canonical' href='https://jaigansa.me/post/template/'>
+
+<link rel="stylesheet" href="/scss/style.scss"><meta property='og:title' content='Template'>
+<meta property='og:description' content='how to use template folder'>
+<meta property='og:url' content='https://jaigansa.me/post/template/'>
+<meta property='og:site_name' content='JAI GANESH'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='linux' /><meta property='article:tag' content='template' /><meta property='article:published_time' content='2020-04-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-04-21T00:00:00&#43;00:00'/><meta property='og:image' content='https://jaigansa.me/post/template/template_cover.webp' />
+<meta name="twitter:site" content="@jaigansa">
+    <meta name="twitter:creator" content="@jaigansa"><meta name="twitter:title" content="Template">
+<meta name="twitter:description" content="how to use template folder"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://jaigansa.me/post/template/template_cover.webp' />
+    <link rel="shortcut icon" href="favicon" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1PBW03GVP"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-P1PBW03GVP', { 'anonymize_ip': false });
+}
+</script>
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "light");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu14e5821af9952dd503bf80e886fbe65d_63932_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😍</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">JAI GANESH</a></h1>
+            <h2 class="site-description">Creative Welder, Digital Artist</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://twitter.com/jaigansa'
+                        target="_blank"
+                        title="Twitter"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://t.me/jaigansa'
+                        target="_blank"
+                        title="Telegram"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/jaigansa'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path
+     id="path1742-7"
+     d="m 21.722217,11.972223 a 9.75,9.75 0 0 1 -9.75,9.75 9.75,9.75 0 0 1 -9.7500004,-9.75 9.75,9.75 0 0 1 9.7500004,-9.7499997 9.75,9.75 0 0 1 9.75,9.7499997 z" />
+  <path
+     id="path1742-3-6-5"
+     d="m 13.879155,21.51002 c -0.01263,-0.08282 -0.02726,-0.165338 -0.04379,-0.247471 -0.137231,-0.658162 -0.397977,-1.284338 -0.768477,-1.845351 -0.362234,0.0563 -0.728102,0.08608 -1.094658,0.08911 C 10.008118,19.501391 8.1235756,18.72965 6.7201735,17.355536 6.0114358,17.627949 5.369267,18.04896 4.8368271,18.590258" />
+  <path
+     id="path290-3"
+     d="m 12.3188,19.494495 c 0.190657,-1.971884 1.556388,-3.601406 3.616142,-4.153313 0.231475,-0.06134 0.418319,-0.168396 0.541991,-0.335591 0.142726,-0.180437 0.21554,-0.737738 0.194755,-1.014341 -0.02083,-0.276599 0.276258,-0.594004 0.299347,-0.70684 0.02309,-0.112832 -0.298085,-0.374947 -0.465674,-0.403364 0.0482,-0.07039 0.367376,-0.271402 0.246254,-0.490746 -0.166702,-0.0625 -0.314636,-0.53684 -0.314636,-0.53684 0,0 0.205925,-0.136367 0.5265,-0.349047 0.211707,-0.264425 -0.05664,-0.540631 -0.183855,-0.663647 C 16.652388,10.717747 16.267773,10.399802 15.90075,10.094064 15.523604,9.7799123 15.440395,9.4776157 15.454399,9.2601975 15.468362,9.042779 15.34509,8.6293302 15.065664,8.4308335 14.786237,8.2323391 14.181471,7.395501 14.181471,7.395501 15.395568,5.946682 13.605491,5.8873156 13.525828,4.8677647 12.645869,5.633461 10.522918,5.498315 8.5404534,5.9078127 6.5882602,6.3110639 5.7210425,7.6364368 6.0059403,8.6628991 4.5174938,11.782611 5.6888225,14.596213 9.3600066,15.546368 8.9935178,16.628645 8.2824334,17.425608 7.2637579,17.838493" />
+</svg>
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="https://jaigansa.me/" selected>English</option>
+                        
+                            <option value="https://jaigansa.me/ta/" >தமிழ்</option>
+                        
+                            <option value="https://jaigansa.me/tan/" >தnglish</option>
+                        
+                    </select>
+                </li>
+            
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/post/template/">
+                <img src="/post/template/template_cover_huc0cca01f5c4aae5358f24153399f2242_27808_800x0_resize_q75_h2_box_2.webp"
+                        srcset="/post/template/template_cover_huc0cca01f5c4aae5358f24153399f2242_27808_800x0_resize_q75_h2_box_2.webp 800w, /post/template/template_cover_huc0cca01f5c4aae5358f24153399f2242_27808_1600x0_resize_q75_h2_box_2.webp 1600w"
+                        width="800" 
+                        height="450" 
+                        loading="lazy"
+                        alt="Featured image of post Template" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/linux/" style="background-color: #2a9d8f; color: #fff;">
+                Linux
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/template/">Template</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            how to use template folder
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 21, 2020</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h4 id="what-is-template">What is template?</h4>
+<ul>
+<li>easy to create new specific program files</li>
+</ul>
+<h4 id="when-using-right-click-template-option">When using right click template option?</h4>
+<ul>
+<li>without open program first create file and folder structure</li>
+</ul>
+<h4 id="why-using-template-feature">Why using template feature?</h4>
+<ul>
+<li>reduce time consumption</li>
+</ul>
+<h3 id="how-to-use-template-files">How to use Template Files</h3>
+<p>template concept usage are same in linux but more file manager application so setup is different.</p>
+<h4 id="list-of-file-manager">List of File Manager</h4>
+<ol>
+<li>Dolphin</li>
+<li>nautilus</li>
+<li>nemo</li>
+<li>thunar
+etc</li>
+</ol>
+<h2 id="template-in-dolphin">Template in Dolphin</h2>
+<p>kde desktop using dolphin this file manager template depend two files main program file and desktop file link to main file</p>
+<h4 id="step_1">step_1</h4>
+<p>open template folder in home directory /home/$user/Templates</p>
+<h4 id="step_2">step_2</h4>
+<p>create some program file we create markdown file</p>
+<h4 id="step_3">step_3</h4>
+<p>create desktop file link the markdown file</p>
+<blockquote>
+<p>Right Click check Template file</p>
+</blockquote>
+<p>![dolphin] (<a class="link" href="https://drive.google.com/uc?export=download&amp;id=1-r7wa4C-icruRs0BK_Gztk3P27uJyAyc"  target="_blank" rel="noopener"
+    >https://drive.google.com/uc?export=download&id=1-r7wa4C-icruRs0BK_Gztk3P27uJyAyc</a>)</p>
+<h3 id="terminal">Terminal</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd ~/Templates
+</span></span><span class="line"><span class="cl">touch markdown.md markdown.desktop
+</span></span><span class="line"><span class="cl">cat &lt;&lt;-&#34;EOF&#34;&gt;&gt; markdown.desktop
+</span></span><span class="line"><span class="cl">[Desktop Entry]
+</span></span><span class="line"><span class="cl">Name=Markdown
+</span></span><span class="line"><span class="cl">Comment=Enter Filename:
+</span></span><span class="line"><span class="cl">Type=Link
+</span></span><span class="line"><span class="cl">URL=markdown.md
+</span></span><span class="line"><span class="cl">Icon=text-markdown
+</span></span><span class="line"><span class="cl">EOF
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="template-in-nautilus">Template in Nautilus</h2>
+<p>Gnome Desktop using Nautilus file manager. its very simple to create template file</p>
+<p><img src="https://lh3.googleusercontent.com/7BukfnN_kAelXPL1-eVl8CX5Bmc2fCdxj9jPYBvn9FJG3tNygaLvzg1UyEeRa9w3GdpY81LFy_kKo7krwOZUtjsRp7KSgJiq9I-Dgguqz_dyzjkPjcrdoazX9hz_SIbF"
+	
+	
+	
+	loading="lazy"
+	
+		alt="gnome right click"
+	
+	
+></p>
+<h4 id="step_1-1">step_1</h4>
+<p>open template folder in home directory /home/$user/Templates</p>
+<h4 id="step_2-1">step_2</h4>
+<p>create some program file we create markdown file done</p>
+<blockquote>
+<p>Right Click check Template file</p>
+</blockquote>
+<p>Related Video
+<div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/_Adz47gEbuw" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
+</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/linux/">linux</a>
+        
+            <a href="/tags/template/">template</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC 0 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jaigansa" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy;
+        
+            2020 -
+        
+        2023 JAI GANESH
+    </section>
+
+    <section class="powerby">
+        Built with <a href="https://jaigansa.me/" target="_blank" rel="noopener">hugo</a> <br />
+        Theme <b><a href="https://github.com/jaigansa" target="_blank" rel="noopener" data-version="3.12.0"></a></b> worked by <a href="https://jaigansa.me" target="_blank" rel="noopener">JAIGANSA</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#what-is-template">What is template?</a></li>
+            <li><a href="#when-using-right-click-template-option">When using right click template option?</a></li>
+            <li><a href="#why-using-template-feature">Why using template feature?</a></li>
+          </ol>
+        </li>
+        <li><a href="#how-to-use-template-files">How to use Template Files</a>
+          <ol>
+            <li><a href="#list-of-file-manager">List of File Manager</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#template-in-dolphin">Template in Dolphin</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#step_1">step_1</a></li>
+            <li><a href="#step_2">step_2</a></li>
+            <li><a href="#step_3">step_3</a></li>
+          </ol>
+        </li>
+        <li><a href="#terminal">Terminal</a></li>
+      </ol>
+    </li>
+    <li><a href="#template-in-nautilus">Template in Nautilus</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#step_1-1">step_1</a></li>
+            <li><a href="#step_2-1">step_2</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
