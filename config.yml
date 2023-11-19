@@ -193,12 +193,12 @@ menu:
     main: []
 
     social:
-        - identifier: twitter
-          name: Twitter
+        - identifier: youTube
+          name: YouTube 
           weight: 1
-          url: https://twitter.com/jaigansa
+          url: https://youtube.com/@jaigansa
           params:
-              icon: brand-twitter
+              icon: brand-youtube
 
         - identifier: telegram
           name: Telegram
