@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>ஜெய் GANESH</title>
-        <link>https://jaigansa.me/tan/</link>
+        <link>https://jaigansa.github.io/tan/</link>
         <description>Recent content on ஜெய் GANESH</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="https://jaigansa.me/tan/index.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language><atom:link href="https://jaigansa.github.io/tan/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>

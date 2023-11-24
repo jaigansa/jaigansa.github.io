@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Posts on JAI GANESH</title>
-        <link>https://jaigansa.me/post/</link>
-        <description>Recent content in Posts on JAI GANESH</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jaigansa.me/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Template</title>
-        <link>https://jaigansa.me/post/template/</link>
-        <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://jaigansa.me/post/template/</guid>
-        <description>&lt;img src="https://jaigansa.me/post/template/template_cover.webp" alt="Featured image of post Template" /&gt;What is template? easy to create new specific program files When using right click template option? without open program first create file and folder structure Why using template feature? reduce time consumption How to use Template Files template concept usage are same in linux but more file manager application so setup is different.
-List of File Manager Dolphin nautilus nemo thunar etc Template in Dolphin kde desktop using dolphin this file manager template depend two files main program file and desktop file link to main file</description>
-        </item>
-        
-    </channel>
+  <channel>
+    <title>Posts on Blowfish</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Template</title>
+      <link>/post/2020/template_shortcut/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/template_shortcut/</guid>
+      <description>What is template?</description>
+    </item>
+    
+  </channel>
 </rss>

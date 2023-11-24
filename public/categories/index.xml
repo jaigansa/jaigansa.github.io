@@ -1,35 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Categories on JAI GANESH</title>
-        <link>https://jaigansa.me/categories/</link>
-        <description>Recent content in Categories on JAI GANESH</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jaigansa.me/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Linux</title>
-        <link>https://jaigansa.me/categories/linux/</link>
-        <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://jaigansa.me/categories/linux/</guid>
-        <description>&lt;img src="https://jaigansa.me/categories/linux/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Linux" /&gt;</description>
-        </item>
-        <item>
-        <title>Android</title>
-        <link>https://jaigansa.me/categories/android/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://jaigansa.me/categories/android/</guid>
-        <description>&lt;img src="https://jaigansa.me/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Android" /&gt;</description>
-        </item>
-        <item>
-        <title>Windows</title>
-        <link>https://jaigansa.me/categories/windows/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://jaigansa.me/categories/windows/</guid>
-        <description>&lt;img src="https://jaigansa.me/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Windows" /&gt;</description>
-        </item>
-        
-    </channel>
+  <channel>
+    <title>Categories on Blowfish</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 </copyright>
+    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
 </rss>

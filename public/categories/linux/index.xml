@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Linux on JAI GANESH</title>
-        <link>https://jaigansa.me/categories/linux/</link>
-        <description>Recent content in Linux on JAI GANESH</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jaigansa.me/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Template</title>
-        <link>https://jaigansa.me/post/template/</link>
-        <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://jaigansa.me/post/template/</guid>
-        <description>&lt;img src="https://jaigansa.me/post/template/template_cover.webp" alt="Featured image of post Template" /&gt;What is template? easy to create new specific program files When using right click template option? without open program first create file and folder structure Why using template feature? reduce time consumption How to use Template Files template concept usage are same in linux but more file manager application so setup is different.
-List of File Manager Dolphin nautilus nemo thunar etc Template in Dolphin kde desktop using dolphin this file manager template depend two files main program file and desktop file link to main file</description>
-        </item>
-        
-    </channel>
+  <channel>
+    <title>linux on Blowfish</title>
+    <link>/categories/linux/</link>
+    <description>Recent content in linux on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 </copyright>
+    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Template</title>
+      <link>/post/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/</guid>
+      <description>What is template?</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/post/template_cover.webp" />
+    </item>
+    
+  </channel>
 </rss>

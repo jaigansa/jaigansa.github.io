@@ -2,89 +2,89 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jaigansa.me/</loc>
+    <loc>https://jaigansa.github.io/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ta"
-                href="https://jaigansa.me/ta/"
+                href="https://jaigansa.github.io/ta/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tan"
-                href="https://jaigansa.me/tan/"
+                href="https://jaigansa.github.io/tan/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jaigansa.me/"
+                href="https://jaigansa.github.io/"
                 />
   </url><url>
-    <loc>https://jaigansa.me/categories/</loc>
+    <loc>https://jaigansa.github.io/categories/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ta"
-                href="https://jaigansa.me/ta/categories/"
+                href="https://jaigansa.github.io/ta/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tan"
-                href="https://jaigansa.me/tan/categories/"
+                href="https://jaigansa.github.io/tan/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jaigansa.me/categories/"
+                href="https://jaigansa.github.io/categories/"
                 />
   </url><url>
-    <loc>https://jaigansa.me/tags/linux/</loc>
+    <loc>https://jaigansa.github.io/tags/linux/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jaigansa.me/categories/linux/</loc>
+    <loc>https://jaigansa.github.io/categories/linux/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jaigansa.me/post/</loc>
+    <loc>https://jaigansa.github.io/post/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jaigansa.me/tags/</loc>
+    <loc>https://jaigansa.github.io/tags/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ta"
-                href="https://jaigansa.me/ta/tags/"
+                href="https://jaigansa.github.io/ta/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tan"
-                href="https://jaigansa.me/tan/tags/"
+                href="https://jaigansa.github.io/tan/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jaigansa.me/tags/"
+                href="https://jaigansa.github.io/tags/"
                 />
   </url><url>
-    <loc>https://jaigansa.me/tags/template/</loc>
+    <loc>https://jaigansa.github.io/tags/template/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jaigansa.me/post/template/</loc>
+    <loc>https://jaigansa.github.io/post/template/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jaigansa.me/archives/</loc>
+    <loc>https://jaigansa.github.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jaigansa.me/page/</loc>
+    <loc>https://jaigansa.github.io/page/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jaigansa.me/about/</loc>
+    <loc>https://jaigansa.github.io/about/</loc>
   </url><url>
-    <loc>https://jaigansa.me/categories/android/</loc>
+    <loc>https://jaigansa.github.io/categories/android/</loc>
   </url><url>
-    <loc>https://jaigansa.me/links/</loc>
+    <loc>https://jaigansa.github.io/links/</loc>
   </url><url>
-    <loc>https://jaigansa.me/search/</loc>
+    <loc>https://jaigansa.github.io/search/</loc>
   </url><url>
-    <loc>https://jaigansa.me/categories/windows/</loc>
+    <loc>https://jaigansa.github.io/categories/windows/</loc>
   </url>
 </urlset>

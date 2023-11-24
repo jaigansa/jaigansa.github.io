@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on ஜெய் கணேஷ்</title>
-        <link>https://jaigansa.me/ta/categories/</link>
+        <link>https://jaigansa.github.io/ta/categories/</link>
         <description>Recent content in Categories on ஜெய் கணேஷ்</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="https://jaigansa.me/ta/categories/index.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language><atom:link href="https://jaigansa.github.io/ta/categories/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>

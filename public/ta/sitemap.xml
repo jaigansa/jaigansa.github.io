@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jaigansa.me/ta/</loc>
+    <loc>https://jaigansa.github.io/ta/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jaigansa.me/"
+                href="https://jaigansa.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tan"
-                href="https://jaigansa.me/tan/"
+                href="https://jaigansa.github.io/tan/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ta"
-                href="https://jaigansa.me/ta/"
+                href="https://jaigansa.github.io/ta/"
                 />
   </url><url>
-    <loc>https://jaigansa.me/ta/categories/</loc>
+    <loc>https://jaigansa.github.io/ta/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jaigansa.me/categories/"
+                href="https://jaigansa.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tan"
-                href="https://jaigansa.me/tan/categories/"
+                href="https://jaigansa.github.io/tan/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ta"
-                href="https://jaigansa.me/ta/categories/"
+                href="https://jaigansa.github.io/ta/categories/"
                 />
   </url><url>
-    <loc>https://jaigansa.me/ta/tags/</loc>
+    <loc>https://jaigansa.github.io/ta/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jaigansa.me/tags/"
+                href="https://jaigansa.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tan"
-                href="https://jaigansa.me/tan/tags/"
+                href="https://jaigansa.github.io/tan/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ta"
-                href="https://jaigansa.me/ta/tags/"
+                href="https://jaigansa.github.io/ta/tags/"
                 />
   </url>
 </urlset>
