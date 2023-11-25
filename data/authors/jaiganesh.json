@@ -1,0 +1,12 @@
+{
+    "name": "jaiganesh",
+    "image" : "img/avatar.jpg",
+    "bio": "owner",
+    "social": [
+        { "linkedin": "https://linkedin.com/in/jaigansa"},
+        { "twitter": "https://twitter.com/jaigansa" },
+        { "instagram": "https://instagram.com/jaigansa" },
+        { "github": "https://github.com/jaigansa" }
+
+    ]
+}

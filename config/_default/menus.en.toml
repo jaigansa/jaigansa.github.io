@@ -11,72 +11,31 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Blog"
-  pageRef = "posts"
+  name = "About"
+  pageRef = "about"
   weight = 10
+[[main]]
+  name = "Posts"
+  pageRef = "posts"
+  weight = 20
 [[main]]
   name = "Docs"
   pageRef = "docs"
-  weight = 10
-
-[[main]]
-  name = "Shortcodes"
-  pageRef = "docs/shortcodes"
-  weight = 15
-
-[[main]]
-  name = "Samples"
-  pageRef = "samples"
-  weight = 16
-
-[[main]]
-  name = "Examples"
-  weight = 20
-
-[[main]]
-  name = "Showcase"
-  parent = "Examples"
-  pageRef = "examples"
   weight = 30
 
-[[main]]
-  name = "Recipes"
-  parent = "Examples"
-  pageRef = "guides"
-  weight = 40
 
 [[main]]
-  name = "Users"
-  pageRef = "users"
-  weight = 90
-
-#[[main]]
-#  name = "Merch"
-#  url = "http://tee.pub/lic/qwSlWVBL5zc"
-#  weight = 100
-
-#[[main]]
-#  name = "Test"
-#  pageRef = "pagTest"
-#  weight = 1000
-
-[[main]]
-  identifier = "twitter"
-  pre = "x-twitter"
-  url = "https://twitter.com/burufugu"
+  identifier = "telegram"
+  pre = "envelope"
+  url = "https://t.me/jaigansa"
   weight = 200
 
-[[main]]
-  identifier = "mastodon"
-  pre = "mastodon"
-  url = "https://masto.ai/@blowfish"
-  weight = 300
 
 [[main]]
   identifier = "github"
   pre = "github"
-  url = "https://github.com/nunocoracao/blowfish"
-  weight = 400
+  url = "https://github.com/jaigansa"
+  weight = 300
 
 
 # -- Footer Menu --
