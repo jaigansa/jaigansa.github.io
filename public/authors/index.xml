@@ -1,42 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors lists on JAIGANSA</title>
+    <title>Authors on JAIGANSA</title>
     <link>https://jaigansa.github.io/authors/</link>
-    <description>Recent content in Authors lists on JAIGANSA</description>
+    <description>Recent content in Authors on JAIGANSA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copy, _right?_ :thinking_face:</copyright>
-    <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jaigansa.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>nunocoracao</title>
-      <link>https://jaigansa.github.io/authors/nunocoracao/</link>
-      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://jaigansa.github.io/authors/nunocoracao/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Second Author</title>
-      <link>https://jaigansa.github.io/authors/secondauthor/</link>
-      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jaigansa.github.io/authors/secondauthor/</guid>
-      <description>Dummy Second Author&amp;rsquo;s awesome dummy bio.</description>
-      
-    </item>
-    
-    <item>
-      <title>jaiganesh</title>
-      <link>https://jaigansa.github.io/authors/jaiganesh/</link>
-      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://jaigansa.github.io/authors/jaiganesh/</guid>
-      <description>jaiganesh is creative welder.</description>
-      
-    </item>
-    
+    <atom:link href="https://jaigansa.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
