@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>example on JAIGANSA</title>
+    <link>https://jaigansa.github.io/tags/example/</link>
+    <description>Recent content in example on JAIGANSA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copy, _right?_ :thinking_face:</copyright>
+    <lastBuildDate>Sun, 09 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jaigansa.github.io/tags/example/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Content Examples</title>
+      <link>https://jaigansa.github.io/docs/content-examples/</link>
+      <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/docs/content-examples/</guid>
+      <description>If you&amp;rsquo;ve been reading the documentation in order, you should now know about all the features and configurations available in Blowfish.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jaigansa.github.io/docs/content-examples/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

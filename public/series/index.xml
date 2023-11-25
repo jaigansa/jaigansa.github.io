@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on Blowfish</title>
-    <link>/series/</link>
-    <description>Recent content in Series on Blowfish</description>
+    <title>Series on JAIGANSA</title>
+    <link>https://jaigansa.github.io/series/</link>
+    <description>Recent content in Series on JAIGANSA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2023 </copyright>
-    <atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copy, _right?_ :thinking_face:</copyright>
+    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jaigansa.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Documentation</title>
+      <link>https://jaigansa.github.io/series/documentation/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/series/documentation/</guid>
+      <description></description>
+      
+    </item>
+    
   </channel>
 </rss>

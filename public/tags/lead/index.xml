@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lead on JAIGANSA</title>
+    <link>https://jaigansa.github.io/tags/lead/</link>
+    <description>Recent content in lead on JAIGANSA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copy, _right?_ :thinking_face:</copyright>
+    <lastBuildDate>Tue, 11 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jaigansa.github.io/tags/lead/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shortcodes</title>
+      <link>https://jaigansa.github.io/docs/shortcodes/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/docs/shortcodes/</guid>
+      <description>In addition to all the default Hugo shortcodes, Blowfish adds a few extras for additional functionality.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jaigansa.github.io/docs/shortcodes/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

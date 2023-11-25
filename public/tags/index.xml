@@ -1,12 +1,522 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Blowfish</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Blowfish</description>
+    <title>Tags on JAIGANSA</title>
+    <link>https://jaigansa.github.io/tags/</link>
+    <description>Recent content in Tags on JAIGANSA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2023 </copyright>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copy, _right?_ :thinking_face:</copyright>
+    <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jaigansa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blowfish</title>
+      <link>https://jaigansa.github.io/tags/blowfish/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/blowfish/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://jaigansa.github.io/tags/hugo/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/hugo/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://jaigansa.github.io/tags/tutorial/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/tutorial/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>authors</title>
+      <link>https://jaigansa.github.io/tags/authors/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/authors/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>sample</title>
+      <link>https://jaigansa.github.io/tags/sample/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/sample/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>thumbnail</title>
+      <link>https://jaigansa.github.io/tags/thumbnail/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/thumbnail/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>docs</title>
+      <link>https://jaigansa.github.io/tags/docs/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/docs/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>new</title>
+      <link>https://jaigansa.github.io/tags/new/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/new/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>installation</title>
+      <link>https://jaigansa.github.io/tags/installation/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/installation/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>config</title>
+      <link>https://jaigansa.github.io/tags/config/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/config/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>icons</title>
+      <link>https://jaigansa.github.io/tags/icons/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/icons/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>shortcodes</title>
+      <link>https://jaigansa.github.io/tags/shortcodes/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/shortcodes/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>homepage</title>
+      <link>https://jaigansa.github.io/tags/homepage/</link>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/homepage/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>layouts</title>
+      <link>https://jaigansa.github.io/tags/layouts/</link>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/layouts/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>front matter</title>
+      <link>https://jaigansa.github.io/tags/front-matter/</link>
+      <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/front-matter/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>icon</title>
+      <link>https://jaigansa.github.io/tags/icon/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/icon/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>lead</title>
+      <link>https://jaigansa.github.io/tags/lead/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/lead/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>mermaid</title>
+      <link>https://jaigansa.github.io/tags/mermaid/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/mermaid/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>analytics</title>
+      <link>https://jaigansa.github.io/tags/analytics/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/analytics/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>comments</title>
+      <link>https://jaigansa.github.io/tags/comments/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/comments/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>favicons</title>
+      <link>https://jaigansa.github.io/tags/favicons/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/favicons/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>partials</title>
+      <link>https://jaigansa.github.io/tags/partials/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/partials/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>privacy</title>
+      <link>https://jaigansa.github.io/tags/privacy/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/privacy/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>content</title>
+      <link>https://jaigansa.github.io/tags/content/</link>
+      <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/content/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>example</title>
+      <link>https://jaigansa.github.io/tags/example/</link>
+      <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/example/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>series</title>
+      <link>https://jaigansa.github.io/tags/series/</link>
+      <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/series/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Advanced</title>
+      <link>https://jaigansa.github.io/tags/advanced/</link>
+      <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/advanced/</guid>
+      <description>This is the advanced tag.</description>
+      
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>https://jaigansa.github.io/tags/css/</link>
+      <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/css/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>deployment</title>
+      <link>https://jaigansa.github.io/tags/deployment/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/deployment/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://jaigansa.github.io/tags/github/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/github/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>hosting</title>
+      <link>https://jaigansa.github.io/tags/hosting/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/hosting/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>netlify</title>
+      <link>https://jaigansa.github.io/tags/netlify/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/netlify/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>render</title>
+      <link>https://jaigansa.github.io/tags/render/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/render/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>firebase</title>
+      <link>https://jaigansa.github.io/tags/firebase/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/firebase/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>likes</title>
+      <link>https://jaigansa.github.io/tags/likes/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/likes/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>views</title>
+      <link>https://jaigansa.github.io/tags/views/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/views/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://jaigansa.github.io/tags/html/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/html/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://jaigansa.github.io/tags/markdown/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/markdown/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>gist</title>
+      <link>https://jaigansa.github.io/tags/gist/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/gist/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>twitter</title>
+      <link>https://jaigansa.github.io/tags/twitter/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/twitter/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>vimeo</title>
+      <link>https://jaigansa.github.io/tags/vimeo/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/vimeo/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>youtube</title>
+      <link>https://jaigansa.github.io/tags/youtube/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/youtube/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>latin</title>
+      <link>https://jaigansa.github.io/tags/latin/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/latin/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>text</title>
+      <link>https://jaigansa.github.io/tags/text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/text/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>katex</title>
+      <link>https://jaigansa.github.io/tags/katex/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/katex/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>maths</title>
+      <link>https://jaigansa.github.io/tags/maths/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/maths/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>chart</title>
+      <link>https://jaigansa.github.io/tags/chart/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/chart/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>diagram</title>
+      <link>https://jaigansa.github.io/tags/diagram/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/diagram/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>graph</title>
+      <link>https://jaigansa.github.io/tags/graph/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/graph/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>emoji</title>
+      <link>https://jaigansa.github.io/tags/emoji/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/emoji/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>template</title>
+      <link>https://jaigansa.github.io/tags/template/</link>
+      <pubDate>Tue, 22 Dec 1987 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaigansa.github.io/tags/template/</guid>
+      <description></description>
+      
+    </item>
+    
   </channel>
 </rss>

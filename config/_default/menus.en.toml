@@ -22,7 +22,10 @@
   name = "Docs"
   pageRef = "docs"
   weight = 30
-
+[[main]]
+  name = "Topics"
+  pageRef = "topics"
+  weight = 40
 
 [[main]]
   identifier = "telegram"
@@ -42,12 +45,4 @@
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
 
- [[footer]]
-   name = "Tags"
-   pageRef = "tags"
-   weight = 10
-
- [[footer]]
-   name = "Authors"
-   pageRef = "authors"
-   weight = 20
+ 
