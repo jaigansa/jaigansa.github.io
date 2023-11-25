@@ -69,14 +69,14 @@ disableImageOptimization = false
   # showRelatedContent = false
   # relatedContentLimit = 3
   showTaxonomies = false
-  showAuthorsBadges = true
+  showAuthorsBadges = false
   showWordCount = true
    sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
 
 [list]
   showHero = true
-  heroStyle = "basic" # lid options: basic, big, background, thumbAndBackground
-  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  heroStyle = "big" # lid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = false # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
   showBreadcrumbs = false
   showSummary = false
@@ -93,8 +93,8 @@ disableImageOptimization = false
   excludedKinds = ["taxonomy", "term"]
 
 [taxonomy]
-  showTermCount = true
-  showHero = true
+  showTermCount = false
+  showHero = false
   # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
