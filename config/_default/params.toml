@@ -5,7 +5,7 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/configuration/#theme-parameters
 
-colorScheme = "bloody"
+colorScheme = "congo"
 defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = false
 
@@ -22,7 +22,7 @@ disableImageOptimization = false
 
  highlightCurrentMenuArea = true
  smartTOC = true
-# smartTOCHideUnfocusedChildren = true
+ smartTOCHideUnfocusedChildren = true
 
 [header]
   layout = "fixed-fill-blur" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
@@ -38,30 +38,30 @@ disableImageOptimization = false
   layout = "background" # valid options: page, profile, hero, card, background, custom
   homepageImage = "img/avatar.png" # used in: hero, and card
   showRecent = true
-  showRecentItems = 5
+  showRecentItems = 6
   showMoreLink = true
   showMoreLinkDest = "/posts"
   cardView = true
-  cardViewScreenWidth = false
+  cardViewScreenWidth = true
   layoutBackgroundBlur = true # only used when layout equals background
 
 [article]
   showDate = true
-  showViews = false
-  showLikes = false
-  showDateUpdated = false
+  showViews = true
+  showLikes = true
+  showDateUpdated = true
   showAuthor = true
-  showHero = false
-  # heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
-  showDraftLabel = true
+  showDraftLabel = false
   showEdit = false
-  # editURL = "https://github.com/username/repo/"
-  editAppendPath = true
+  editURL = "https://github.com/jaigansa/jaigansa.github.io/tree/main"
+  editAppendPath = false
   seriesOpened = false
-  showHeadingAnchors = true
+  showHeadingAnchors = false
   showPagination = true
   invertPagination = false
   showReadingTime = true
@@ -69,19 +69,19 @@ disableImageOptimization = false
   # showRelatedContent = false
   # relatedContentLimit = 3
   showTaxonomies = false
-  showAuthorsBadges = false
+  showAuthorsBadges = true
   showWordCount = true
-  # sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+   sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
 
 [list]
-  showHero = false
+  showHero = true
   # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
   showSummary = false
   showViews = false
-  showLikes = false
+  showLikes = true
   showTableOfContents = false
   showCards = false
   groupByYear = true
@@ -94,7 +94,7 @@ disableImageOptimization = false
 
 [taxonomy]
   showTermCount = true
-  showHero = false
+  showHero = true
   # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
@@ -103,7 +103,7 @@ disableImageOptimization = false
   cardView = false
 
 [term]
-  showHero = false
+  showHero = true
   # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
@@ -114,13 +114,13 @@ disableImageOptimization = false
   cardViewScreenWidth = false
 
 [firebase]
-  # apiKey = "XXXXXX"
-  # authDomain = "XXXXXX"
-  # projectId = "XXXXXX"
-  # storageBucket = "XXXXXX"
-  # messagingSenderId = "XXXXXX"
-  # appId = "XXXXXX"
-  # measurementId = "XXXXXX"
+    apiKey = "AIzaSyCUXUfOxxWxKLO0P9n15bna_FpRdLcav8Q"
+    authDomain = "views-likes-597ae.firebaseapp.com"
+    projectId = "views-likes-597ae"
+    storageBucket = "views-likes-597ae.appspot.com"
+    messagingSenderId = "1098494142337"
+    appId = "1:1098494142337:web:664bec15c7fa3c420d6a80"
+    measurementId = "G-JB7YCJ7392"
 
 [fathomAnalytics]
   # site = "ABC12345"
