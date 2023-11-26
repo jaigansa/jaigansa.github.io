@@ -32,19 +32,13 @@
 
 
 
-# Social Links
+# Links
 
 [[main]]
   identifier = "youtube"
   pre = "play-solid"
   url = "https://youtube.com/@jaigansa"
   weight = 100
-
-[[main]]
-  identifier = "telegram"
-  pre = "paper-plane-solid"
-  url = "https://t.me/jaigansa"
-  weight = 200
 
 [[main]]
   identifier = "github"
