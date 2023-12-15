@@ -1,6 +1,6 @@
 ---
-title: "JAIGANESH"
-description: "Creative Welder & Digital Artist & Developer"
+title: ""
+description: ""
 ---
 
 
