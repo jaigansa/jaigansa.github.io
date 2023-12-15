@@ -12,3 +12,6 @@
 
 # Hugo
 public
+
+# Edit
+*.bak
