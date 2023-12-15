@@ -1,5 +1,6 @@
+
 ---
-title: "JAIGANESH"
+title: "About"
 date: 1994-04-18
 draft: false
 description: "about jaiganesh"
