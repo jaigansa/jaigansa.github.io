@@ -12,7 +12,7 @@ tags: ["new", "about"]
 {{< timeline >}}
 
 {{< timelineItem icon="user" header="who am i" badge="1994" subheader="Human" >}}
-A dedicated professional with a passion for truck body customization and graphic design. With a keen eye for detail and a commitment to delivering top-notch services, I take pride in transforming ordinary trucks into personalized works of art. My journey is fueled by a love for creativity and a desire to bring unique visions to life. Whether it's crafting customized truck bodies or designing compelling graphics, I strive for excellence in every project.
+In my mind start with empty now full of confusion, human have set of rules try to follow rules but it's to complicated ...
 {{< /timelineItem >}}
 
 {{< timelineItem icon="sun" header="Profession" badge="2011 - Now" subheader="Creative Welder" >}}
@@ -44,7 +44,7 @@ data: {
 
 
   datasets: [{
-    label: '% Experienses',
+    label: 'Percent',
     data: [50, 75, 40, 60, 50, 50],
     showLine: false,
     borderWidth: 0,
@@ -57,12 +57,14 @@ options: {
     responsive: true,
     plugins: {
       legend: {
+        display: false,
         position: 'bottom',
         
       },
       title: {
         display: true,
-        text: ''
+        text: '',
+        position: 'end'
       }
     }
   }
