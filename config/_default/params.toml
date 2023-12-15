@@ -41,7 +41,7 @@ disableImageOptimization = false
   layoutBackgroundBlur = true # only used when layout equals background
 
 [article]
-  showDate = true
+  showDate = false
   showViews = false
   showLikes = true
   showDateUpdated = true
