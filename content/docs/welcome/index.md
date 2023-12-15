@@ -1,5 +1,5 @@
 ---
-title: "Welcome to blogs"
+title: "Welcome"
 date: 2022-01-19
 draft: false
 description: "trails of blogs."

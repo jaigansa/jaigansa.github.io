@@ -1,6 +1,6 @@
 ---
 title: "docs"
-date: 2022-06-13T20:55:37+01:00
+date: 2022-06-13
 draft: false
 
 showDate : false
@@ -9,7 +9,7 @@ showHeadingAnchors : false
 showPagination : false
 showReadingTime : false
 showTableOfContents : true
-showTaxonomies : false 
+showTaxonomies : true
 showWordCount : false
 showSummary : false
 sharingLinks : false

@@ -43,7 +43,7 @@ disableImageOptimization = false
 [article]
   showDate = true
   showViews = false
-  showLikes = false
+  showLikes = true
   showDateUpdated = false
   showAuthor =  true
   showHero = true
@@ -71,16 +71,16 @@ disableImageOptimization = false
 
 [list]
   showHero = true
-  heroStyle = "background" # lid options: basic, big, background, thumbAndBackground
+  heroStyle = "thumbAndBackground" # lid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
   showSummary = false
-  showViews = false
+  showViews = true
   showLikes = false
   showTableOfContents = false
   showCards = true
-  groupByYear = true
+  groupByYear = false
   cardView = true
   cardViewScreenWidth = true
   constrainItemsWidth = true

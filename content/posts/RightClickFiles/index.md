@@ -28,7 +28,7 @@ template concept usage are same in linux but more file manager application so se
 2. nautilus
 3. nemo
 4. thunar
-etc
+5. etc....
 
 ## Template in Dolphin
 

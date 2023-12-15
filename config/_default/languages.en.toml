@@ -19,8 +19,8 @@ title = "JaiGanesh"
    headline = "Creative Welder & Digital Artist & Developer"
    bio = "owner"
    links = [
-     { github = "https://github.com/jaigansa" },
+      { github = "https://github.com/jaigansa" },
       { telegram = "https://t.me/jaigansa" },
-#      { twitch = "https://twitch.tv/jaigansa" },
+      { twitch = "https://twitch.tv/jaigansa" },
       { youtube = "https://youtube.com/@jaigansa" }
    ]

@@ -4,10 +4,13 @@ date: 1994-04-18
 draft: false
 description: "about jaiganesh"
 tags: ["new", "about"]
+
+cascade:
+  showDate: false
+  showAuthor: false
+  invertPagination: false
 ---
 
-
-{{< screenshot href="https://jaigansa.github.io/img/avatar_hu5aced6c3a0398d4ca385ceb4157848bd_180094_288x288_fill_box_center_3.png"  caption="testing">}}
 
 {{< timeline >}}
 
