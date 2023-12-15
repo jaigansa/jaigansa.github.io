@@ -7,11 +7,11 @@ title = "JaiGanesh"
   displayName = "EN"
   isoCode = "en"
   rtl = false
-  dateFormat = "2006 Jan 01"
+  dateFormat = "2022 Jan 01"
   logo = "img/logo.png"
   secondaryLogo = "img/logo.png"
   description = "Personal site"
-  copyright = "jaigansa"
+  copyright = "© 2023 Jaiganesh"
 
  [author]
    name = "JaiGanesh"

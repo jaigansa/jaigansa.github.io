@@ -8,7 +8,7 @@ showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false
 showReadingTime : false
-showTableOfContents : true
+showTableOfContents : false
 showTaxonomies : false 
 showWordCount : false
 showSummary : false
@@ -16,3 +16,6 @@ sharingLinks : false
 
 ---
 
+{{< lead >}}
+We brings your doubts to life. :heart_eyes:
+{{< /lead >}}

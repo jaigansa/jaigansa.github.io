@@ -3,7 +3,7 @@ title: "JAIGANESH"
 date: 1994-04-18
 draft: false
 description: "about jaiganesh"
-tags: ["new", "about"]
+tags: ["about"]
 
 cascade:
   showDate: false

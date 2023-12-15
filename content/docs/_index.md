@@ -1,5 +1,5 @@
 ---
-title: "docs"
+title: "Docs"
 date: 2022-06-13
 draft: false
 
@@ -8,11 +8,14 @@ showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false
 showReadingTime : false
-showTableOfContents : true
-showTaxonomies : true
+showTableOfContents : false
+showTaxonomies : false
 showWordCount : false
 showSummary : false
-sharingLinks : false
+sharingLinks : true
 
 ---
 
+{{< lead >}}
+Set Of Collections in Documents. :puzzle_piece: 
+{{< /lead >}}

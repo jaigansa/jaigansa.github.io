@@ -31,7 +31,10 @@
 
 
 
-
+[[main]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 90
 # Links
 
 [[main]]
