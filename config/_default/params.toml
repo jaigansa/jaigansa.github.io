@@ -64,9 +64,9 @@ disableImageOptimization = false
   showRelatedContent = true
   relatedContentLimit = 3
   showTaxonomies = true
-  showAuthorsBadges = false
+  showAuthorsBadges = true
   showWordCount = true
-  showComments = false
+  showComments = true
   sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
 
 [list]
