@@ -1,12 +1,13 @@
 ---
-title: "Install Linux Os"
-date: 2024-01-01
+title: "Install"
+date: 2022-01-19
 draft: false
-description: "install linux os"
-tags: ["linux", "docs"]
-series: ["installation"]
-series_order: 1
+description: "trails of blogs."
+tags: ["docs"]
+series: ["Documentation"]
+series_order: 2
 ---
+
 
 # Choosing the right distro and desktop Environment of Linux
 
