@@ -97,7 +97,7 @@ disableImageOptimization = false
   showViews = false
   showLikes = false
   showTableOfContents = false
-  cardView = true
+  cardView = false
 
 [term]
   showHero = true
