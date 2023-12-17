@@ -3,7 +3,7 @@ title: "File Template for linux"
 date: 2023-11-10
 draft: false
 description: "easy to create files"
-tags: ["linux", "template"]
+tags: ["linux"]
 showAuthor: true
 authors:
   - "jaiganesh"
