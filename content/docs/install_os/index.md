@@ -1,10 +1,10 @@
 ---
-title: "Install"
+title: "os"
 date: 2022-01-19
 draft: false
-description: "trails of blogs."
+description: "install operating system"
 tags: ["docs"]
-series: ["Documentation"]
+series: ["Install"]
 series_order: 2
 ---
 

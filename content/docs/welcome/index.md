@@ -4,7 +4,7 @@ date: 2022-01-19
 draft: false
 description: "trails of blogs."
 tags: ["docs"]
-series: ["Documentation"]
+series: ["Install"]
 series_order: 1
 ---
 
