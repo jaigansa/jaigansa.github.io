@@ -1,5 +1,5 @@
 ---
-title: "Install OS"
+title: "Install Os"
 date: 2022-01-19
 draft: false
 description: "install operating system"
