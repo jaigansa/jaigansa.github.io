@@ -1,5 +1,5 @@
 ---
-title: "os"
+title: "Install OS"
 date: 2022-01-19
 draft: false
 description: "install operating system"
@@ -9,7 +9,7 @@ series_order: 2
 ---
 
 
-# Choosing the right distro and desktop Environment of Linux
+### Choosing the right distro and desktop Environment of Linux
 
 #### We Choose Latest Kubuntu Desktop LTS
 
