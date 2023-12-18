@@ -6,7 +6,7 @@ description: "easy to create files"
 tags: ["linux"]
 showAuthor: true
 authors:
-  - "jaiganesh"
+  - "jaigansa"
 showAuthorsBadges : true
 ---
 
