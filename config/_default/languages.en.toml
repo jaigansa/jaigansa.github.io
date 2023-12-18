@@ -14,12 +14,12 @@ title = "JaiGanesh"
   copyright = "© 2023 Jaiganesh"
 
  [author]
-   name = "JaiGanesh"
-   image = "img/avatar.png"
-   headline = "Creative Welder & Digital Artist & Developer"
-   bio = "owner"
+   name = ""
+   image = ""
+   headline = ""
+   bio = ""
    links = [
-      { github = "https://github.com/jaigansa" },
-      { telegram = "https://t.me/jaigansa" },
-      { youtube = "https://youtube.com/@jaigansa" }
+#      { github = "https://github.com/jaigansa" },
+#      { telegram = "https://t.me/jaigansa" },
+#      { youtube = "https://youtube.com/@jaigansa" }
    ]
