@@ -7,7 +7,7 @@ tags: ["linux"]
 showAuthor: true
 authors:
   - "jaigansa"
-showAuthorsBadges : true
+showAuthorsBadges : false
 ---
 
 #### What is template?
