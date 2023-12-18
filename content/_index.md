@@ -1,14 +1,16 @@
 ---
 title: ""
+date:
 description: ""
 ---
 
 
 
-This is our Knowledge display to world here some [documentation]({{< ref "docs" >}}). here find more setup and configuration.
+This is our Knowledge display to world here some [docs]({{< ref "docs" >}}). here find more setup and configuration.
 
 
-Explore the [blog page]({{< ref "posts" >}}) to get a feel for what jaiganesh can do. If you like what you see, check out the project on <a target="_blank" href="https://github.com/jaigansa">Github</a> to get started.
+Explore the [Posts]({{< ref "posts" >}}) to get a feel for what jaiganesh can do. 
+
 
 {{< typeit
   tag=h2
@@ -19,6 +21,5 @@ Explore the [blog page]({{< ref "posts" >}}) to get a feel for what jaiganesh ca
   breakLines=false	
   loop=true
 >}}
-
 THANK YOU
 {{< /typeit >}}

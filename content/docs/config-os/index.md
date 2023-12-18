@@ -6,6 +6,7 @@ description: "config os"
 tags: ["docs"]
 series: ["Install Linux"]
 series_order: 3
+showAuthor: false
 ---
 
 

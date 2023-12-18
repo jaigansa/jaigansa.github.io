@@ -4,8 +4,9 @@ date: 2022-01-19
 draft: false
 description: "install operating system"
 tags: ["docs"]
-series: ["Install"]
+series: ["Install Linux"]
 series_order: 2
+showAuthor: false
 ---
 
 
