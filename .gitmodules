@@ -1,4 +1,0 @@
-[submodule "theme/"]
-	path = themes/blowfish
-	url =
-	branch = main
