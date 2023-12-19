@@ -1,4 +1,4 @@
-{{ $disableImageOptimization := .Site.Params.disableImageOptimization | default true }}
+{{ $disableImageOptimization := .Site.Params.disableImageOptimization | default false }}
 
 <section>
     {{ partial "recent-articles/main.html" . }}
