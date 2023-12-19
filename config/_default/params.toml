@@ -17,7 +17,7 @@ disableImageOptimization = true
 
  highlightCurrentMenuArea = true
  smartTOC = true
- smartTOCHideUnfocusedChildren = true
+ smartTOCHideUnfocusedChildren = false
 
 [header]
   layout = "fixed-fill-blur" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
@@ -43,7 +43,7 @@ disableImageOptimization = true
 
 [article]
   showDate = true
-  showViews = false
+  showViews = true
   showLikes = true
   showDateUpdated = true
   showAuthor =  false
@@ -77,7 +77,7 @@ disableImageOptimization = true
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
   showSummary = false
-  showViews = false
+  showViews = true
   showLikes = false
   showTableOfContents = true
   showCards = true
