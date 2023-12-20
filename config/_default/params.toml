@@ -1,6 +1,6 @@
 # -- Theme Options --
 
- colorScheme = "neon"
+ colorScheme = "blowfish"
  defaultAppearance = "dark" # valid options: light or dark
  autoSwitchAppearance = true
 

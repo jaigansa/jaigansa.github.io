@@ -1,5 +1,5 @@
 ---
-title: "File Template for linux"
+title: "Right Click Files"
 date: 2023-11-10
 draft: false
 description: "easy to create files"
