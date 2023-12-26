@@ -20,6 +20,14 @@ showAuthor: false
  ```
 - [Chrome](https://www.google.com/chrome/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release)
+``` bash
+sudo apt update && sudo apt upgrade
+cd ~/Downloads
+sudo tar xjf firefox-*.tar.bz2
+sudo mv firefox /opt
+sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox
+sudo wget https://raw.githubusercontent.com/mozilla/sumo-kb/main/install-firefox-linux/firefox.desktop -P /usr/local/share/applications
+
 
 2. Communication
  - [Telegram](https://telegram.org/apps)
@@ -71,5 +79,8 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install lm-sensors nano -y
 
 ```
+
+
+
 
 
