@@ -4,10 +4,6 @@ date: 2024-04-10
 draft: false
 description: "adb cli pair and connect wireless"
 tags: ["linux", "cli"]
-showAuthor: true
-authors:
-  - "jaigansa"
-showAuthorsBadges : false
 ---
 
 ## ADB DEPENDENCIES
