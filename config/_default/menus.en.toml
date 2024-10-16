@@ -11,9 +11,9 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "About"
+  name = "Home"
   pre = "user"
-  pageRef = "about"
+  pageRef = "home"
   weight = 10
 
 [[main]]
@@ -29,12 +29,16 @@
   weight = 30
 
 
-
-
 [[main]]
   name = "Tags"
   pageRef = "tags"
   weight = 90
+
+[[main]]
+  name = "About"
+  pre = "user"
+  pageRef = "about"
+  weight = 100
 
 # Links
 
