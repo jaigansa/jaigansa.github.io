@@ -1,4 +1,4 @@
-# -- Site Configuration --
+# -- Site Configuration -- 
 
 theme = "blowfish"
 # baseURL = "https://jaigansa.github.io"
