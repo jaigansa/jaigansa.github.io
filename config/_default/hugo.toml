@@ -1,7 +1,7 @@
 # -- Site Configuration --
 
 theme = "blowfish"
-baseURL = "https://jaigansa.github.io"
+# baseURL = "https://jaigansa.github.io"
 defaultContentLanguage = "en"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles

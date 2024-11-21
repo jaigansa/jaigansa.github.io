@@ -1,6 +1,6 @@
 ---
 title: "Sync Two Folder"
-date: Dec 21, 2023
+date: 2023-12-11
 draft: false
 description: ""
 tags: ["posts"]

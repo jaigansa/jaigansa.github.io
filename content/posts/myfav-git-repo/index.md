@@ -24,8 +24,7 @@ tags: ["posts"]
 1. Screen Copy
 {{< github repo="Genymobile/scrcpy" >}}
 </br>
-1. Expenses Manager
-{{< github repo="RetroMusicPlayer/Paisa" >}}
+
 </br>
 
 

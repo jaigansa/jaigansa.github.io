@@ -27,4 +27,4 @@ adb devices
 
 
 Related Video
-{{<youtube >}}
+
