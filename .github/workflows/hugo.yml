@@ -1,36 +1,34 @@
-name: Deploy Hugo Site to GitHub Pages
+name: GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Trigger deploy on push to main branch
+      - main  # Set a branch to deploy
   pull_request:
-    branches:
-      - main  # Trigger deploy on pull request to main branch
 
 jobs:
-  build:
-    runs-on: ubuntu-latest  # Use the latest Ubuntu image
-
+  deploy:
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-    # Step 1: Check out the repository
-    - name: Checkout code
-      uses: actions/checkout@v3
-    
-    # Step 2: Set up Hugo
-    - name: Set up Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo_version: '0.124.0'  # Specify your Hugo version
-    
-    # Step 3: Build the Hugo site
-    - name: Build the Hugo site
-      run: hugo --minify  # Builds the site in the default public/ directory
+      - uses: actions/checkout@v4
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-    # Step 4: Deploy the Hugo site to GitHub Pages
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public  # Path to the directory where Hugo builds the site
-        publish_branch: gh-pages  # Branch where the site will be deployed
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.139.0'
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
