@@ -2,11 +2,11 @@
 title: "Welcome"
 date: 2022-01-01
 draft: false
-description: "trails of blogs."
-tags: ["docs"]
-series: ["Install Linux"]
+description: "Intro fo mypc"
+tags: ["docs", "linux"]
+series: ["My Setup"]
 series_order: 1
-showAuthor: false
+showAuthor: true
 ---
 
 {{< lead >}}

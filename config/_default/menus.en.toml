@@ -11,16 +11,10 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Home"
-  pre = "user"
-  pageRef = "home"
-  weight = 10
-
-[[main]]
   name = "Docs"
-  pre = "file-solid"
+  pre = "user"
   pageRef = "docs"
-  weight = 20
+  weight = 10
 
 [[main]]
   name = "Posts"
@@ -31,14 +25,15 @@
 
 [[main]]
   name = "Tags"
+  pre = "tag"
   pageRef = "tags"
-  weight = 90
+  weight = 80
 
 [[main]]
   name = "About"
   pre = "user"
   pageRef = "about"
-  weight = 100
+  weight = 90
 
 # Links
 

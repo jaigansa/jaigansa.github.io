@@ -1,8 +1,8 @@
 ---
-title: ""
-date:
-description: ""
+title: "home"
+description: "Welcome to jaiganesh website"
 ---
+
 
 
 
@@ -21,5 +21,5 @@ Explore the [Posts]({{< ref "posts" >}}) to get a feel for what jaiganesh can do
   breakLines=false	
   loop=true
 >}}
-THANK YOU
+THANK YOU 
 {{< /typeit >}}

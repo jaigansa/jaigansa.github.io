@@ -5,5 +5,5 @@ draft: false
 ---
 
 {{< lead >}}
-Set Of Collections in Documents. :puzzle_piece: 
+My System Setup and Config
 {{< /lead >}}

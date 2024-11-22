@@ -3,10 +3,10 @@ title: "Obs Build and Install"
 date: 2024-02-22
 draft: false
 description: ""
-tags: ["docs"]
-series: ["Install Linux"]
+tags: ["docs", "linux"]
+series: ["My Setup"]
 series_order: 4
-showAuthor: false
+showAuthor: true
 ---
 
 

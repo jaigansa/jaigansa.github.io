@@ -1,24 +1,28 @@
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "JaiGanesh"
+title = "Jai Ganesh"
 
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "2006 Jan 01" 
-  logo = "img/logo.png"
-  secondaryLogo = "img/logo.png"
-  description = "Personal site"
-  copyright = "© 2023 Jaiganesh"
+  logo = "img/logo.webp"
+# secondaryLogo = "img/logo.png"
+  description = "jaiganesh own info site"
+  copyright = "© 2025 Jaiganesh"
 
- [author]
-   name = "Jaiganesh"
-   image = "img/logo.png"
-   headline = "human"
+ [params.author]
+   name = "JAI GANESH"
+   emailid = "jaigansa@outlook.com"
+   image = "img/ai_studio_2.webp"
+   headline = "Welder"
    bio = "welder"
    links = [
+      { youtube = "https://youtube.com/@jaigansa" },
+      { discord = "https://discord.gg/sMmeDGchfY" },
       { github = "https://github.com/jaigansa" },
-     { youtube = "https://youtube.com/@jaigansa" }
+      
    ]
+
