@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cli on JaiGanesh</title><link>/tags/cli/</link><description>Recent content in Cli on JaiGanesh</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2023 Jaiganesh</copyright><lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cli/index.xml" rel="self" type="application/rss+xml"/><item><title>ADB Connect Cli</title><link>/posts/adb-connect-cli/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><guid>/posts/adb-connect-cli/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="/posts/adb-connect-cli/featured.png"/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cli on Jai Ganesh</title><link>https://localhost:1313/tags/cli/</link><description>Recent content in Cli on Jai Ganesh</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2025 Jaiganesh</copyright><lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:1313/tags/cli/index.xml" rel="self" type="application/rss+xml"/><item><title>ADB Connect Cli</title><link>https://localhost:1313/posts/adb-connect-cli/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><guid>https://localhost:1313/posts/adb-connect-cli/</guid><description>&lt;h2 class="relative group">ADB DEPENDENCIES
+&lt;div id="adb-dependencies" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+style="text-decoration-line: none !important;" href="#adb-dependencies" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h2>
+&lt;p>&lt;a href="https://developer.android.com/tools/releases/platform-tools" target="_blank">ADB PLATFROM TOOLS&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># clear all server&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">adb kill-server
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># pair new adb device&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">adb pair 192.168.0.1:00000
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># add new device connection&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">adb connect 192.168.0.1:00000
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># check connection&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">adb devices
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Related Video&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/posts/adb-connect-cli/featured.png"/></item></channel></rss>

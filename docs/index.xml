@@ -1,1 +1,178 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on JaiGanesh</title><link>/docs/</link><description>Recent content in Docs on JaiGanesh</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2023 Jaiganesh</copyright><lastBuildDate>Mon, 13 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Obs Build and Install</title><link>/docs/obs-build-and-install/</link><pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate><guid>/docs/obs-build-and-install/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="/docs/obs-build-and-install/featured.png"/></item><item><title>Main Apps</title><link>/docs/main-apps/</link><pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate><guid>/docs/main-apps/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="/docs/main-apps/featured.png"/></item><item><title>Config Os</title><link>/docs/config-os/</link><pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate><guid>/docs/config-os/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="/docs/config-os/featured.png"/></item><item><title>Install Os</title><link>/docs/install-os/</link><pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate><guid>/docs/install-os/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="/docs/install-os/featured.png"/></item><item><title>Welcome</title><link>/docs/welcome/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>/docs/welcome/</guid><description/><media:content xmlns:media="http://search.yahoo.com/mrss/" url="/docs/welcome/featured.png"/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Jai Ganesh</title><link>https://localhost:1313/docs/</link><description>Recent content in Docs on Jai Ganesh</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2025 Jaiganesh</copyright><lastBuildDate>Mon, 13 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Obs Build and Install</title><link>https://localhost:1313/docs/obs-build-and-install/</link><pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate><guid>https://localhost:1313/docs/obs-build-and-install/</guid><description>&lt;h3 class="relative group">Build in Debian
+&lt;div id="build-in-debian" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+style="text-decoration-line: none !important;" href="#build-in-debian" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h3>
+&lt;ol>
+&lt;li>Install Dependencies in debian&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Build system dependencies&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install cmake ninja-build pkg-config clang clang-format build-essential curl ccache git zsh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># OBS dependencies (core):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install libavcodec-dev libavdevice-dev libavfilter-dev libavformat-dev libavutil-dev libswresample-dev libswscale-dev libx264-dev libcurl4-openssl-dev libmbedtls-dev libgl1-mesa-dev libjansson-dev libluajit-5.1-dev python3-dev libx11-dev libxcb-randr0-dev libxcb-shm0-dev libxcb-xinerama0-dev libxcb-composite0-dev libxcomposite-dev libxinerama-dev libxcb1-dev libx11-xcb-dev libxcb-xfixes0-dev swig libcmocka-dev libxss-dev libglvnd-dev libgles2-mesa libgles2-mesa-dev libwayland-dev librist-dev libsrt-openssl-dev libpci-dev libpipewire-0.3-dev libqrcodegencpp-dev
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># OBS Qt6 dependencies (UI):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> qt6-base-dev &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> qt6-base-private-dev &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> libqt6svg6-dev &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> qt6-wayland &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> qt6-image-formats-plugins
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
+&lt;li>Build source&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># OBS Source Code&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone --recursive https://github.com/obsproject/obs-studio.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># CEF Source&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget https://cdn-fastly.obsproject.com/downloads/cef_binary_5060_linux64.tar.bz2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tar xf cef_binary_5060_linux64.tar.bz2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> obs-studio
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Config&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;Release&amp;#34;&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -DCEF_ROOT_DIR&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;../cef_binary_5060_linux64&amp;#34;&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -DENABLE_AJA&lt;span class="o">=&lt;/span>&lt;span class="m">0&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -DENABLE_LIBFDK&lt;span class="o">=&lt;/span>&lt;span class="m">1&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -DQT_VERSION&lt;span class="o">=&lt;/span>&lt;span class="m">6&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># build&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cmake --build build -j&lt;span class="k">$(&lt;/span>nproc&lt;span class="k">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># deb package&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cmake --build build --target package -j&lt;span class="k">$(&lt;/span>nproc&lt;span class="k">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;li>Install Builds&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt remove obs-studio &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> sudo apt autoremove
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-mark unhold obs-studio
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo dpkg -i ./build/*.deb
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 class="relative group">Official Build Instructions
+&lt;div id="official-build-instructions" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+style="text-decoration-line: none !important;" href="#official-build-instructions" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/obsproject/obs-studio/wiki/Build-Instructions-For-Linux" target="_blank">OBS-STUDIO&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 class="relative group">PLUGINS
+&lt;div id="plugins" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+style="text-decoration-line: none !important;" href="#plugins" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a href="https://github.com/occ-ai/obs-urlsource" target="_blank">URL-SOURCE&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/obs-ndi/obs-ndi" target="_blank">OBS-NDI&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/WarmUpTill/SceneSwitcher" target="_blank">ADVANCE-SCENE-SWITCHER&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/exeldro/obs-move-transition" target="_blank">MOVE-TRANSITION&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/occ-ai/obs-localvocal" target="_blank">OBS-VOCAL&lt;/a>&lt;/li>
+&lt;/ol></description></item><item><title>Main Apps</title><link>https://localhost:1313/docs/main-apps/</link><pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate><guid>https://localhost:1313/docs/main-apps/</guid><description>&lt;h3 class="relative group">Initial Apps
+&lt;div id="initial-apps" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+style="text-decoration-line: none !important;" href="#initial-apps" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h3>
+&lt;ol>
+&lt;li>Browser&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Chromium &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install chromium
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;a href="https://www.google.com/chrome/" target="_blank">Chrome&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.mozilla.org/en-US/firefox/all/#product-desktop-release" target="_blank">Firefox&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt update &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> sudo apt upgrade
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> ~/Downloads
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo tar xjf firefox-*.tar.bz2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo mv firefox /opt
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo wget https://raw.githubusercontent.com/mozilla/sumo-kb/main/install-firefox-linux/firefox.desktop -P /usr/local/share/applications
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
+&lt;li>Communication&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>&lt;a href="https://telegram.org/apps" target="_blank">Telegram&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://signal.org/download/" target="_blank">signal&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://discord.com/download" target="_blank">discord&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 class="relative group">Major Apps
+&lt;div id="major-apps" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+style="text-decoration-line: none !important;" href="#major-apps" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Graphics&lt;/p></description></item><item><title>Config Os</title><link>https://localhost:1313/docs/config-os/</link><pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate><guid>https://localhost:1313/docs/config-os/</guid><description>&lt;ol>
+&lt;li>Update Systems&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt upgrade
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
+&lt;li>Graphics Cards Drivers&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>amd drivers &lt;a href="https://www.amd.com/en/support/linux-drivers" target="_blank">amd official&lt;/a>&lt;/li>
+&lt;li>nivida drivers &lt;a href="https://www.nvidia.com/en-in/drivers/unix/" target="_blank">nividia official&lt;/a>&lt;/li>
+&lt;li>Intel driver &lt;a href="https://www.intel.com/content/www/us/en/download/747008/intel-arc-graphics-driver-ubuntu.html" target="_blank">Intel Offical&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ol start="3">
+&lt;li>User Interface Tweeks&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>Paprius Icons &lt;a href="https://git.io/papirus-icon-theme" target="_blank">Paprius Offical&lt;/a>&lt;/li>
+&lt;li>Dracula Themes &lt;a href="https://draculatheme.com/" target="_blank">dracula offical&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ol start="4">
+&lt;li>&lt;/li>
+&lt;/ol></description></item><item><title>Install Os</title><link>https://localhost:1313/docs/install-os/</link><pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate><guid>https://localhost:1313/docs/install-os/</guid><description>&lt;h3 class="relative group">Choosing the right distro and desktop Environment of Linux
+&lt;div id="choosing-the-right-distro-and-desktop-environment-of-linux" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+style="text-decoration-line: none !important;" href="#choosing-the-right-distro-and-desktop-environment-of-linux" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h3>
+&lt;h4 class="relative group">We Choose Latest Kubuntu Desktop LTS
+&lt;div id="we-choose-latest-kubuntu-desktop-lts" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+style="text-decoration-line: none !important;" href="#we-choose-latest-kubuntu-desktop-lts" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h4>
+&lt;ol>
+&lt;li>Download the latest release of the kubuntu os&lt;/li>
+&lt;/ol>
+&lt;a
+class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+href="https://kubuntu.org/getkubuntu/"
+target="_self"
+role="button"
+>
+Download
+&lt;/a>
+&lt;ol start="2">
+&lt;li>Flash with Etcher to the usb stick&lt;/li>
+&lt;/ol>
+&lt;a
+class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+href="https://etcher.balena.io/#download-etcher"
+target="_self"
+role="button"
+>
+Boot Tool
+&lt;/a></description></item><item><title>Welcome</title><link>https://localhost:1313/docs/welcome/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>https://localhost:1313/docs/welcome/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+Welcome
+&lt;/div></description></item></channel></rss>

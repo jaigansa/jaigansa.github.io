@@ -1,1 +1,215 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on JaiGanesh</title><link>/tags/about/</link><description>Recent content in About on JaiGanesh</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2023 Jaiganesh</copyright><lastBuildDate>Mon, 18 Apr 1994 00:00:00 +0000</lastBuildDate><atom:link href="/tags/about/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>/about/</link><pubDate>Mon, 18 Apr 1994 00:00:00 +0000</pubDate><guid>/about/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on Jai Ganesh</title><link>https://localhost:1313/tags/about/</link><description>Recent content in About on Jai Ganesh</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2025 Jaiganesh</copyright><lastBuildDate>Mon, 18 Apr 1994 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:1313/tags/about/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://localhost:1313/about/</link><pubDate>Mon, 18 Apr 1994 00:00:00 +0000</pubDate><guid>https://localhost:1313/about/</guid><description>&lt;ol class="border-l-2 border-primary-500 dark:border-primary-300 list-none">
+&lt;li>
+&lt;div class="flex flex-start">
+&lt;div class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5">
+&lt;span class="relative block icon">
+&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?>
+&lt;svg
+class="icon icon-tabler icon-tabler-user"
+width="24"
+height="24"
+viewBox="0 0 24 24"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:svg="http://www.w3.org/2000/svg">
+&lt;path
+id="path1742-7"
+fill="currentColor"
+d="M 11.972656 1.2226562 C 6.0474519 1.2226561 1.2226564 6.0474519 1.2226562 11.972656 C 1.2226562 17.897861 6.0474518 22.722656 11.972656 22.722656 C 17.897861 22.722656 22.722656 17.897861 22.722656 11.972656 C 22.722656 6.0474521 17.897861 1.2226563 11.972656 1.2226562 z M 11.972656 3.2226562 C 16.816982 3.2226562 20.722656 7.1283301 20.722656 11.972656 C 20.722656 16.072592 17.925403 19.498504 14.128906 20.455078 C 13.970101 19.993244 13.754825 19.552096 13.484375 19.142578 C 13.376636 18.979275 13.183558 18.893801 12.990234 18.923828 C 12.793924 18.954338 12.596352 18.974818 12.398438 18.988281 C 12.756185 17.247939 14.055395 15.84558 15.935547 15.341797 C 16.167022 15.280457 16.352891 15.173054 16.476562 15.005859 C 16.619288 14.825423 16.69266 14.26879 16.671875 13.992188 C 16.651045 13.715589 16.947614 13.397992 16.970703 13.285156 C 16.993793 13.172324 16.673448 12.909276 16.505859 12.880859 C 16.554059 12.810469 16.873075 12.609969 16.751953 12.390625 C 16.585251 12.328125 16.4375 11.853516 16.4375 11.853516 C 16.4375 11.853516 16.642316 11.716586 16.962891 11.503906 C 17.174597 11.239482 16.906512 10.96286 16.779297 10.839844 C 16.652061 10.716825 16.267413 10.399488 15.900391 10.09375 C 15.523245 9.7795986 15.441074 9.4771836 15.455078 9.2597656 C 15.469041 9.0423473 15.345832 8.6301371 15.066406 8.4316406 C 14.78698 8.2331464 14.181641 7.3945313 14.181641 7.3945312 C 15.395736 5.9457137 13.605054 5.8867374 13.525391 4.8671875 C 12.645433 5.632883 10.523478 5.4987058 8.5410156 5.9082031 C 6.5888244 6.3114539 5.7209619 7.6356481 6.0058594 8.6621094 C 4.5174144 11.781818 5.6881946 14.596721 9.359375 15.546875 C 9.0558974 16.443074 8.5167612 17.142955 7.7617188 17.591797 C 7.5200584 17.409869 7.2888061 17.211981 7.0703125 16.998047 C 6.9304871 16.861183 6.72364 16.818448 6.5410156 16.888672 C 6.082428 17.064936 5.6498652 17.300172 5.2519531 17.583984 C 3.9846326 16.066466 3.2226562 14.111477 3.2226562 11.972656 C 3.2226563 7.12833 7.12833 3.2226561 11.972656 3.2226562 z " />
+&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words">
+&lt;div class="flex justify-between">
+&lt;h2 class="mt-0">
+who am i
+&lt;/h2>
+&lt;h3 class="">
+&lt;span class="flex" style="cursor: pointer;">
+&lt;span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+1994
+&lt;/span>
+&lt;/span>
+&lt;/h3>
+&lt;/div>
+&lt;h4 class="mt-0">
+Human
+&lt;/h4>
+&lt;div class="mb-6">
+In my mind start with empty now full of confusion, human have set of rules try to follow rules but it's to complicated ...
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;div class="flex flex-start">
+&lt;div class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5">
+&lt;span class="relative block icon">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words">
+&lt;div class="flex justify-between">
+&lt;h2 class="mt-0">
+Profession
+&lt;/h2>
+&lt;h3 class="">
+&lt;span class="flex" style="cursor: pointer;">
+&lt;span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+2011 - Now
+&lt;/span>
+&lt;/span>
+&lt;/h3>
+&lt;/div>
+&lt;h4 class="mt-0">
+Creative Welder
+&lt;/h4>
+&lt;div class="mb-6">
+Truck Body Customization is our Major Job, but we do metal fabrication works for customer wants
+&lt;div
+class="flex px-4 py-3 rounded-md"
+style="background-color: #f1faee20"
+>
+&lt;span
+class="ltr:pr-3 rtl:pl-3 flex items-center"
+style="color: #e63946"
+>
+&lt;span class="relative block icon">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+&lt;path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/>&lt;/svg>
+&lt;/span>
+&lt;/span>
+&lt;span
+style="color: #e63946"
+>Our Guru is G.Saminathan s/o K.Govindasamy&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;div class="flex flex-start">
+&lt;div class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5">
+&lt;span class="relative block icon">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">&lt;path fill="currentColor" d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words">
+&lt;div class="flex justify-between">
+&lt;h2 class="mt-0">
+Interested
+&lt;/h2>
+&lt;h3 class="">
+&lt;span class="flex" style="cursor: pointer;">
+&lt;span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+2014-now
+&lt;/span>
+&lt;/span>
+&lt;/h3>
+&lt;/div>
+&lt;h4 class="mt-0">
+Graphics &amp;amp; Coding
+&lt;/h4>
+&lt;div class="mb-6">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;div class="flex flex-start">
+&lt;div class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5">
+&lt;span class="relative block icon">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+&lt;path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words">
+&lt;div class="flex justify-between">
+&lt;h2 class="mt-0">
+Our Tools
+&lt;/h2>
+&lt;h3 class="">
+&lt;span class="flex" style="cursor: pointer;">
+&lt;span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+2014 - Now
+&lt;/span>
+&lt;/span>
+&lt;/h3>
+&lt;/div>
+&lt;h4 class="mt-0">
+Tools of Experience
+&lt;/h4>
+&lt;div class="mb-6">
+&lt;div class="chart">
+&lt;canvas id="chart-0b3d1fda81f90e0ed4a2009d638aeca6">&lt;/canvas>
+&lt;script type="text/javascript">
+window.addEventListener("DOMContentLoaded", (event) => {
+const ctx = document.getElementById("chart-0b3d1fda81f90e0ed4a2009d638aeca6");
+const chart = new Chart(ctx, {
+type: 'doughnut',
+data: {
+labels: ['Blender', 'Inkscape', 'Freecad', 'Gimp', 'Kdenlive', 'Synfig',],
+datasets: [{
+label: 'Percent',
+data: [50, 75, 40, 60, 50, 50],
+showLine: false,
+borderWidth: 0,
+}]
+},
+options: {
+responsive: true,
+plugins: {
+legend: {
+display: false,
+position: 'bottom',
+},
+title: {
+display: false,
+text: '',
+position: 'end'
+}
+}
+}
+});
+});
+&lt;/script>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;div class="flex flex-start">
+&lt;div class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5">
+&lt;span class="relative block icon">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+&lt;path fill="currentColor" d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words">
+&lt;div class="flex justify-between">
+&lt;h2 class="mt-0">
+Our Goal
+&lt;/h2>
+&lt;h3 class="">
+&lt;span class="flex" style="cursor: pointer;">
+&lt;span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+Always
+&lt;/span>
+&lt;/span>
+&lt;/h3>
+&lt;/div>
+&lt;div class="mb-6">
+&lt;ul>
+&lt;li> Survey This world.!&lt;/li>
+&lt;li> Build Peace full environments &lt;/li>
+&lt;li> Grow nontoxic Plants &lt;/li>
+&lt;li> Eat healty Foods &lt;/li>
+&lt;li> think positive thoughts &lt;/li>
+&lt;li> Don't Disturb Others &lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>
