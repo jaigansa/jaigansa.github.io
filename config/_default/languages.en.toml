@@ -1,20 +1,19 @@
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Jai Ganesh"
+title = "JaiGanesh"
 
 [params]
-  displayName = "EN"
+  displayName = "English"
   isoCode = "en"
   rtl = false
-  dateFormat = "2006 Jan 01" 
+  dateFormat = "2 January 2006" 
   logo = "img/logo.webp"
-# secondaryLogo = "img/logo.png"
-  description = "jaiganesh own info site"
+  description = "jaiganesh own info website"
   copyright = "© 2025 Jaiganesh"
 
  [params.author]
-   name = "JAI GANESH"
+   name = "JaiGanesh"
    emailid = "jaigansa@outlook.com"
    image = "img/ai_studio_2.webp"
    headline = "Welder"
