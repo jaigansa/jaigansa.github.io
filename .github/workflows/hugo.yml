@@ -1,36 +1,33 @@
-# .github/workflows/gh-pages.yml
-
-name: GitHub Pages
+name: Hugo Build and Deploy
 
 on:
+  # Trigger the workflow on push to the main branch or when a pull request is merged
   push:
     branches:
       - main
+  pull_request:
 
 jobs:
-  build-deploy:
-    runs-on: ubuntu-20.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      # Step 1: Checkout the repository
+      - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          submodules: true
-          fetch-depth: 0
 
+      # Step 2: Setup Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "latest"
+          hugo-version: 'latest'
 
-      - name: Build
+      # Step 3: Build the Hugo site
+      - name: Build Hugo site
         run: hugo --minify
 
-      - name: Deploy
+      # Step 4: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
           publish_dir: ./public

@@ -2,7 +2,7 @@
  node_modules
 .hugo_build.lock
 
-# OS generated files
+# Generated files by os
 .DS_Store
 .DS_Store?
 ._*
@@ -10,9 +10,9 @@
 .Spotlight-V100
 .Trashes
 
-# Hugo
-public/
-resources/
+# Generated files by hugo
+/public/
+/resources/_gen/
 
 
 # Edit
