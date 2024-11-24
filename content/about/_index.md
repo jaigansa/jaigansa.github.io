@@ -3,8 +3,7 @@
 title: "About"
 date: 1994-04-18
 draft: false
-description: "about jaiganesh"
-tags: ["about"]
+description: "about"
 
 cascade:
   showDate: false
@@ -15,12 +14,18 @@ cascade:
 
 {{< timeline >}}
 
+
 {{< timelineItem icon="user" header="who am i" badge="1994" subheader="Human" >}}
-In my mind start with empty now full of confusion, human have set of rules try to follow rules but it's to complicated ...
+I’m a welder with a big dream: to create something that lasts and leaves a mark on the world. While I take pride in my craft, I’m also passionate about the digital world—coding, exploring open-source projects, and streaming.
+
+I love combining creativity with technology, always looking for new ways to grow and make an impact. My goal is to inspire others and leave a legacy that won’t be forgotten.
 {{< /timelineItem >}}
 
+
+
+
 {{< timelineItem icon="sun" header="Profession" badge="2011 - Now" subheader="Creative Welder" >}}
-Truck Body Customization is our Major Job, but we do metal fabrication works for customer wants
+Truck body customization is our primary job, but we also offer metal fabrication services based on customer needs.
 {{< alert icon="heart" cardColor="#f1faee20" iconColor="#e63946" textColor="#e63946" >}}
 Our Guru is G.Saminathan s/o K.Govindasamy
 {{< /alert >}}
@@ -38,39 +43,99 @@ Our Guru is G.Saminathan s/o K.Govindasamy
 
 
 
-{{< timelineItem icon="code" header="Our Tools" badge="2014 - Now" subheader="Tools of Experience" >}}
+{{< timelineItem icon="code" header="Coding" badge="2014 - Now" subheader="Experience" >}}
 
 
 {{< chart >}}
-type: 'doughnut',
+type: 'bar',
 data: {
-  labels: ['Blender', 'Inkscape', 'Freecad', 'Gimp', 'Kdenlive', 'Synfig',],
-
+  labels: ['Linux','Blender', 'Inkscape', 'Freecad', 'Gimp', 'Kdenlive', 'synfig'],
 
   datasets: [{
     label: 'Percent',
-    data: [50, 75, 40, 60, 50, 50],
-    showLine: false,
-    borderWidth: 0,
-
-
-  }]
+    data: [30, 50, 75, 40, 60, 50,50 ],
+    backgroundColor: ['#1F618D', '#F1C40F', '#27AE60', '#884EA0', '#D35400'],
+    borderColor: 'rgba(0, 0, 0, 0)',
+    borderWidth: 1,
+    borderRadius: 50,
+  }],
   },
 
 options: {
+    indexAxis: 'y', // Horizontal bar
     responsive: true,
+    scales: {
+      x: {
+        max: 100, // Set the maximum value (100%)
+        beginAtZero: true,
+        grid: {
+          display: false, // Remove grid lines on x-axis
+        },
+      },
+      y: {
+        display: true, // Hide the y-axis
+        grid: {
+          display: false, // Remove grid lines on y-axis
+        },
+      },
+    },
     plugins: {
       legend: {
-        display: false,
-        position: 'bottom',
-        
+        display: false, // Hide the legend
       },
-      title: {
-        display: false,
-        text: '',
-        position: 'end'
-      }
-    }
+      
+    },
+  }
+
+{{< /chart >}}
+
+
+
+{{< /timelineItem >}}
+
+{{< timelineItem icon="code" header="Programming" badge="2014 - Now" subheader="Experience" >}}
+
+
+{{< chart >}}
+type: 'bar',
+data: {
+
+    labels: ['.c','.py', '.js', '.sh', '.css', '.html',],
+
+  datasets: [{
+    label: 'Percent',
+    data: [10, 30, 50, 40, 60, 70, ],
+    backgroundColor: ['#1F618D', '#F1C40F', '#27AE60', '#884EA0', '#D35400'],
+    borderColor: 'rgba(0, 0, 0, 0)',
+    borderWidth: 1,
+    borderRadius: 50,
+  }],
+  },
+
+options: {
+    indexAxis: 'y', // Horizontal bar
+    responsive: true,
+    scales: {
+      x: {
+        max: 100, // Set the maximum value (100%)
+        beginAtZero: true,
+        grid: {
+          display: false, // Remove grid lines on x-axis
+        },
+      },
+      y: {
+        display: true, // Hide the y-axis
+        grid: {
+          display: false, // Remove grid lines on y-axis
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false, // Hide the legend
+      },
+      
+    },
   }
 
 {{< /chart >}}
@@ -83,13 +148,19 @@ options: {
 {{< timelineItem icon="heart-empty" header="Our Goal" badge="Always" >}}
 
 <ul>
-<li> Survey This world.!</li>
-<li> Build Peace full environments </li>
-<li> Grow nontoxic Plants </li>
-<li> Eat healty Foods </li>
-<li> think positive thoughts </li>
-<li> Don't Disturb Others </li>
-</ul>
+  <li>Explore the World</li>
+
+  <li>Create Peaceful Environments</li>
+
+  <li>Grow Non-toxic Plants</li>
+
+  <li>Eat Healthy Foods</li>
+
+  <li>Think Positive Thoughts</li>
+
+  <li>Respect Others (Peace)</li>
+
+  </ul>
 
 {{< /timelineItem >}}
 
