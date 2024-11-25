@@ -15,5 +15,5 @@ description: "Welcome to jaiganesh website"
   breakLines=false	
   loop=true
 >}}
-THANK YOU 
+THANK YOU
 {{< /typeit >}}
