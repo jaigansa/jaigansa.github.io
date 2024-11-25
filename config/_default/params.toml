@@ -1,6 +1,6 @@
 # -- Theme Options --
 
- colorScheme = "avocado"
+ colorScheme = "nord"
  defaultAppearance = "dark" # valid options: light or dark
  autoSwitchAppearance = true
 
@@ -54,7 +54,7 @@
   showAuthor = true
   # showAuthorBottom = false
   showHero = true
-  heroStyle = "thumbAndBackground" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "big" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background
   showBreadcrumbs = true
   showDraftLabel = true
@@ -69,15 +69,15 @@
   showTableOfContents = true
   showRelatedContent = true
   relatedContentLimit = 6
-  showTaxonomies = false 
+  showTaxonomies = true
   showAuthorsBadges = true 
   showWordCount = false
-  sharingLinks = [ "linkedin", "twitter", "bluesky", "reddit", "whatsapp", "telegram", "pinterest", "facebook", "email"]
+  sharingLinks = [ "twitter", "whatsapp", "telegram", "facebook", "email" ]
   showZenMode = true
 
 [list]
   showHero = true
-  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "big" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background
   layoutBackgroundHeaderSpace = false
   showBreadcrumbs = false
@@ -89,16 +89,16 @@
   orderByWeight = true
   groupByYear = false
   cardView = true
-  cardViewScreenWidth = false
-  constrainItemsWidth = false
+  cardViewScreenWidth = true
+  constrainItemsWidth = true
 
 [sitemap]
-  excludedKinds = []
+  excludedKinds = ["taxonomy", "term"]
 
 [taxonomy]
   showTermCount = true
   showHero = true
-  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "big" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
   showLikes = false
@@ -107,14 +107,14 @@
 
 [term]
   showHero = true
-  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "big" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
   showLikes = false
   showTableOfContents = true
   groupByYear = false
   cardView = true
-  cardViewScreenWidth = false
+  cardViewScreenWidth = true
 
 [firebase]
     apiKey = "AIzaSyCUXUfOxxWxKLO0P9n15bna_FpRdLcav8Q"
