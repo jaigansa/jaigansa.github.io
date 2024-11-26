@@ -1,16 +1,16 @@
 ---
 title: "Obs Build and Install"
-date: 2024-02-22
+date: 2024-04-02
 draft: false
 description: ""
 tags: ["docs", "linux"]
 series: ["My Setup"]
 series_order: 4
-showAuthor: true
 ---
 
+this is the first line. 
 
-### Build in Debian
+## Build in Debian
 
 1. Install Dependencies in debian
 ```bash

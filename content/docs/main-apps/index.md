@@ -6,9 +6,9 @@ description: ""
 tags: ["docs"]
 series: ["Install Linux"]
 series_order: 4
-showAuthor: false
 ---
 
+our main app list and setup details.
 
 ### Initial Apps
 

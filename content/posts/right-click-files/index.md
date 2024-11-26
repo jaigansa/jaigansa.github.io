@@ -1,51 +1,35 @@
 ---
-title: "Right Click Files"
-date: 2023-11-10
+title: "Right Click Files "
+date: 2023-01-01
 draft: false
 description: "easy to create files"
 tags: ["linux"]
-showAuthor: true
-authors:
-  - "jaigansa"
-showAuthorsBadges : false
 ---
 
-#### What is template?
-* easy to create premade files. its have copy of original file, prevent to scrath work.
+A template is a pre-made file that acts as a copy of the original, making it easier to avoid starting from scratch. 
 
-#### When using right click template option?
-* without open program first create file and folder structure
+## Benefit
+The right-click template option lets you quickly create files and folder structures without opening a program, saving time and boosting efficiency.
 
-#### Why using template feature?
-* reduce time consumption 
 
-### How to use Template Files
+## right click templates concept
 
-template concept usage are same in linux but more file manager application so setup is different.
+The concept of templates is the same in Linux, but there are more file manager applications, so the setup different via.
 
-#### List of File Manager
-1. Dolphin
-2. nautilus
-3. nemo
-4. thunar
-5. etc....
+### linux File Manager
+- Dolphin
+- nautilus
 
-## Template in Dolphin
 
-kde desktop using dolphin this file manager template depend two files main program file and desktop file link to main file
+## KDE Setup
+kde desktop using dolphin  file manager so depend two files template file and desktop file link
 
-<ul>
-<li>open template folder in home directory /home/$user/Templates</li>
+- open template folder in home directory ```/home/$user/Templates```
+- create template file we create markdown file
+- create desktop file.
 
-<li>create some program file we create markdown file</li>
+copy & paste 
 
-<li>create desktop file link the markdown file</li>
-</ul>
-
-> Right Click check Template file
- [dolphin](https://drive.google.com/uc?export=download&id=1-r7wa4C-icruRs0BK_Gztk3P27uJyAyc)
-
-### Terminal 
 ```bash
 cd ~/Templates
 touch markdown.md markdown.desktop
@@ -59,22 +43,18 @@ Icon=text-markdown
 EOF
 ```
 
-## Template in Nautilus
+## Nautilus Setup
 Gnome Desktop using Nautilus file manager. its very simple to create template file 
 
-[gnome right click]()
 
-
-<ul>
-    <li>open template folder in home directory /home/$user/Templates
-    </li>
-    <li>create some program file we create markdown file done 
-    </li>
-    <li>Right Click check Template file</li>
-</ul>
+- Open template folder in home directory ```/home/$user/Templates```
+- Create template file we create markdown file
+- Right click check template file
 
 
 
 
-Related Video
-{{<youtube _Adz47gEbuw>}}
+
+## Demo video
+
+{{< youtubeLite id="_Adz47gEbuw" label="Right-Click Demo" >}}

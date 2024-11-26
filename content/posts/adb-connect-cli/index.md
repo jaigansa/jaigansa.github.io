@@ -6,7 +6,7 @@ description: "adb cli pair and connect wireless"
 tags: ["linux", "cli"]
 ---
 
-## ADB DEPENDENCIES
+abd connect  cli
 
 [ADB PLATFROM TOOLS](https://developer.android.com/tools/releases/platform-tools)
 

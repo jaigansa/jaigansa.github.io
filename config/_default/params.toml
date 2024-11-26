@@ -10,7 +10,7 @@
  replyByEmail = false
 
 
- mainSections = ["posts"]
+ mainSections = ["posts", "docs"]
 # robots = ""
 
  disableImageOptimization = true
@@ -40,10 +40,10 @@
   showRecent = true
   showRecentItems = 6
   showMoreLink = true
-  showMoreLinkDest = "posts"
+  showMoreLinkDest = "posts" 
   cardView = true
   cardViewScreenWidth = false
-  layoutBackgroundBlur = true # only used when layout equals background
+  layoutBackgroundBlur = false # only used when layout equals background
 
 [article]
   showDate = true
@@ -52,45 +52,44 @@
   showDateOnlyInArticle = true
   showDateUpdated = false
   showAuthor = true
-  # showAuthorBottom = false
+  showAuthorBottom = true
   showHero = true
   heroStyle = "big" # valid options: basic, big, background, thumbAndBackground
-  layoutBackgroundBlur = true # only used when heroStyle equals background
-  showBreadcrumbs = true
+  layoutBackgroundBlur = false # only used when heroStyle equals background
+  showBreadcrumbs = false
   showDraftLabel = true
   showEdit = true
   editURL = "https://github.com/jaigansa/jaigansa.github.io/tree/main/content"
   editAppendPath = true
   seriesOpened = false
-  showHeadingAnchors = true
-  showPagination = true
+  showHeadingAnchors = false
+  showPagination = false
   invertPagination = false
   showReadingTime = false
   showTableOfContents = true
   showRelatedContent = true
-  relatedContentLimit = 6
+  relatedContentLimit = 3
   showTaxonomies = true
-  showAuthorsBadges = true 
+  showAuthorsBadges = false
   showWordCount = false
-  sharingLinks = [ "twitter", "whatsapp", "telegram", "facebook", "email" ]
+  sharingLinks = [ "whatsapp", "telegram", "facebook",  ]
   showZenMode = true
 
 [list]
-  showHero = true
-  heroStyle = "big" # valid options: basic, big, background, thumbAndBackground
-  layoutBackgroundBlur = true # only used when heroStyle equals background
+  showHero = false
+  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = false # only used when heroStyle equals background
   layoutBackgroundHeaderSpace = false
   showBreadcrumbs = false
-  showSummary = false
-  showViews = false
+  showSummary = true
   showLikes = false
-  showTableOfContents = true
-  showCards = true
-  orderByWeight = true
+  showTableOfContents = false
+  showCards = false
+  orderByWeight = false
   groupByYear = false
-  cardView = true
-  cardViewScreenWidth = true
-  constrainItemsWidth = true
+  cardView = false
+  cardViewScreenWidth = false
+  constrainItemsWidth = false
 
 [sitemap]
   excludedKinds = ["taxonomy", "term"]

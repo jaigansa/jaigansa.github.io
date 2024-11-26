@@ -1,33 +1,39 @@
 ---
-title: "Myfav Git Repo"
+title: "fav Git Repo"
 date: 2023-12-20
 draft: false
 description: ""
-tags: ["posts"]
+tags: ["docs"]
+series: ["Install Linux"]
+series_order: 7
 ---
+
+
+fav git repo.
+
+
 ## Own Repo
-1. My repo
+### webapps - practice
 {{< github repo="jaigansa/webapps" >}}
 </br>
-## Fav Repo
-</br>
 
-1. My Fav Icon Pack
+
+
+## Icon Pack
 {{< github repo="PapirusDevelopmentTeam/papirus-icon-theme" >}}
 </br>
-1. and Themes
+
+### Themes
 {{< github repo="PapirusDevelopmentTeam/arc-kde" >}}
 </br>
-1. Synfig
+
+## Synfig
 {{< github repo="synfig/synfig" >}}
 </br>
-1. Screen Copy
+
+## Screen Copy
 {{< github repo="Genymobile/scrcpy" >}}
 </br>
 
 </br>
-
-
-{{< swatches "#64748b" "#3b82f6" "#06b6d4" >}}
-
 
