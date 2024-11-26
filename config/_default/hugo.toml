@@ -1,7 +1,7 @@
 # -- Site Configuration -- 
 
 theme = "blowfish"
-baseURL = "https://localhost:1313"
+baseURL = "https://jaigansa.github.io"
 defaultContentLanguage = "en"
 disableLanguages = []
 
