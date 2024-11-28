@@ -8,7 +8,7 @@ series: ["My Setup"]
 series_order: 4
 ---
 
-this is the first line. 
+obs-studio build in debian 12 from source.
 
 ## Build in Debian
 
