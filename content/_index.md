@@ -1,6 +1,6 @@
 ---
-title: "home"
-description: "Welcome to jaiganesh website"
+title: "JaiGanesh"
+description: "Welcome to My Tech Haven"
 ---
 
 
