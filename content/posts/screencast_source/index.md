@@ -24,10 +24,38 @@ Install
 
 #### serve screen the rtmp 
 
-> system-ip-address:port `192.168.0.100:8889`
+> system-ip-address:port `192.168.0.100:1935`
 
 > key  `streamkey`
 
+
+
+#### NGINX 
+
+```bash
+sudo apt-get update && sudo apt-get install nginx libnginx-mod-rtmp vlc
+sudo nano /etc/nginx/nginx.conf
+```
+
+```bash
+rtmp {
+        server {
+                listen 1935;
+                chunk_size 4096;
+
+                application live {
+                        live on;
+                        record off;
+                }
+        }
+}
+
+```
+```bash
+sudo nginx -t && sudo systemctl restart nginx
+nmap -sT localhost
+
+```
 
 #### ffmpeg reserve rtmp
 
