@@ -1,0 +1,67 @@
+/* nord scheme */
+
+:root {
+
+
+ /* neutral */ 
+  --color-neutral: 216,	222, 233;
+/* new  */
+  --color-neutral-50: 248, 245, 252;   
+  --color-neutral-100: 242, 241, 248; 
+  --color-neutral-200: 236, 239, 244; 
+  --color-neutral-300: 229, 233, 240;  
+  --color-neutral-400: 220, 230, 236; 
+  --color-neutral-500: 76, 86, 106;
+  --color-neutral-600: 67, 76, 94; 
+  --color-neutral-700: 59, 66, 82; 
+  --color-neutral-800: 46, 52, 64; 
+  --color-neutral-900: 40, 48, 60;
+  
+  
+/* Primary */
+  --color-primary-50:  242, 241, 248;
+  --color-primary-100: 240, 244, 244;
+  --color-primary-200: 229, 233, 240;
+  --color-primary-300: 136, 192, 193;
+  --color-primary-400: 129, 161, 193;
+  --color-primary-500: 67, 76, 94;
+  --color-primary-600: 58, 65, 81;
+  --color-primary-700: 46, 52, 64;
+  --color-primary-800: 40, 48, 60;
+  --color-primary-900: 34, 44, 54;
+
+/* seconday */
+  --color-secondary-50:  242, 241, 248; 
+  --color-secondary-100: 236, 239, 244; 
+  --color-secondary-200: 229, 233, 240; 
+  --color-secondary-300: 216, 222, 233; 
+  --color-secondary-400:  94, 129, 172;
+  --color-secondary-500: 129, 161, 193;
+  --color-secondary-600: 136, 192, 208;
+  --color-secondary-700:  67, 76, 94; 
+  --color-secondary-800: 163, 190, 140; 
+  --color-secondary-900:  46, 52, 64;
+}
+
+
+
+
+
+test {
+  --nord:  rgb(46, 52, 64);
+  --nord1: rgb(59, 66, 82);
+  --nord2: rgb(67, 76, 94);
+  --nord3: rgb(76, 86, 106);
+  --nord4: rgb(216, 222, 233);
+  --nord5: rgb(229, 233, 240);
+  --nord6: rgb(236, 239, 244);
+  --nord7: rgb(143, 188, 187);
+  --nord8: rgb(136, 192, 208);
+  --nord9: rgb(129, 161, 193);
+  --nord10:rgb(94, 129, 172);
+  --nord11:rgb(191, 97, 106);
+  --nord12:rgb(208, 135, 112);
+  --nord13:rgb(235, 203, 139);
+  --nord14:rgb(163, 190, 140);
+  --nord15:rgb(180, 142, 173);
+}

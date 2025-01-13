@@ -1,0 +1,19 @@
+#others
+ node_modules
+.hugo_build.lock
+
+# Generated files by os
+.DS_Store
+.DS_Store?
+._*
+.directory
+.Spotlight-V100
+.Trashes
+
+# Generated files by hugo
+/public/
+/resources/_gen/
+
+
+# Edit
+.vscode
