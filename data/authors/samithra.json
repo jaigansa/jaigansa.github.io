@@ -1,0 +1,15 @@
+{
+    "name": "samithra",
+    "image" : "img/nuno_avatar.jpg",
+    "bio": "beginner",
+    "social": [
+        { "linkedin": "https://linkedin.com/in/samithra" },
+        { "twitter": "https://twitter.com/samithra" },
+        { "instagram": "https://instagram.com/samithra" },
+        { "medium": "https://medium.com/@samithra" },
+        { "github": "https://github.com/samithra" },
+        { "goodreads": "http://goodreads.com/samithra" },
+        { "keybase": "https://keybase.io/samithra" },
+        { "reddit": "https://reddit.com/user/samithra" }
+    ]
+}

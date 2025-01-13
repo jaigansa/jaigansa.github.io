@@ -1,31 +1,28 @@
 # -- Theme Options --
 
- colorScheme = "nord"
- defaultAppearance = "dark" # valid options: light or dark
+ colorScheme = "slate"
+ defaultAppearance = "dark"
  autoSwitchAppearance = true
-
  enableSearch = true
  enableCodeCopy = true
-
- replyByEmail = false
-
+ replyByEmail = true
 
  mainSections = ["posts", "docs"]
-# robots = ""
+ robots = ""
 
  disableImageOptimization = true
  disableTextInHeader = true
  backgroundImageWidth = 1200
 
- defaultBackgroundImage = "img/ai_studio_1.webp" 
- defaultFeaturedImage = "img/featured.webp" 
+ defaultBackgroundImage = "img/cartoon.webp" 
+ defaultFeaturedImage = "/featured_wip.webp" 
 
  highlightCurrentMenuArea = true
  martTOC = true
  smartTOCHideUnfocusedChildren = false
 
 [header]
-  layout = "basic" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
+  layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
 
 [footer]
   showMenu = true
@@ -35,8 +32,8 @@
   showScrollToTop = true
 
 [homepage]
-  layout = "profile" # valid options: page, profile, hero, card, background, custom
-# homepageImage = "img/ai_studio_1.webp" # used in: hero, and card
+  layout = "page" # valid options: page, profile, hero, card, background, custom
+  homepageImage = "hero.webp" # used in: hero, and card
   showRecent = true
   showRecentItems = 6
   showMoreLink = true
@@ -54,7 +51,7 @@
   showAuthor = true
   showAuthorBottom = true
   showHero = true
-  heroStyle = "big" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = false # only used when heroStyle equals background
   showBreadcrumbs = false
   showDraftLabel = true

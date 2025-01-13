@@ -1,19 +1,27 @@
 ---
-title: "JaiGanesh"
-description: "Welcome to My Tech Haven"
+title: ""
+description: ""
 ---
 
+# Hi there 👋
+
+
+
+ # [GAMING](https://www.youtube.com/@jaistreams?sub_confirmation=1)
+
+ # [CODING](https://www.youtube.com/@jaigansa?sub_confirmation=1)
 
 
 
 {{< typeit
   tag=h2
-  initialString=WELCOME
+  initialString="Don't Forget to"
   lifeLike=true
-  startDelay=1000
-  speed=120
+  startDelay=2000
+  speed=240
   breakLines=false	
   loop=true
 >}}
-THANK YOU
+
+Subscribe Our Channel
 {{< /typeit >}}

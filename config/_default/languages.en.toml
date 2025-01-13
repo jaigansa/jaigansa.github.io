@@ -7,15 +7,15 @@ title = "JaiGanesh"
   displayName = "English"
   isoCode = "en"
   rtl = false
-  dateFormat = "2 Jan 2006" 
-  logo = "img/logo.webp"
+  dateFormat = "Apr 3, 2006" 
+  logo = "logo.webp"
   description = "jaiganesh own info website"
-  copyright = "© 2025 Jaiganesh"
+  copyright = "© [Jaiganesh](https://github.com/jaigansa)"
 
  [params.author]
    name = "JaiGanesh"
    emailid = "jaigansa@outlook.com"
-   image = "img/ai_studio_2.webp"
+   image = "hero.webp"
    headline = "Welder"
    bio = "welder"
    links = [
