@@ -1,0 +1,6 @@
+{{ with resources.Get "css/main.css" }}
+    {{ $css := . | css.PostCSS }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+{{ else }}
+    {{ errorf "Missing CSS resource: 'assets/css/main.css' was not found." }}
+{{ end }}

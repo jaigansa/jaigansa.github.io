@@ -1,7 +1,6 @@
 baseURL = 'https://jaigansa.github.io/'
 languageCode = 'en-US'
 title = 'Jaigansa'
-theme = "jaigansa"
 
 [[menus.main]]
 name = 'Home'
@@ -18,3 +17,6 @@ name = 'Abouts'
 pageRef = '/abouts'
 weight = 30
 
+[params]
+  author_name = "Jai Ganesh"
+  tagline = "A Web Developer focused on performance and clean code."

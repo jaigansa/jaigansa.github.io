@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+  <div class="container mx-auto p-8">
+    <section id="hero" class="text-center py-20">
+        <h1 class="text-5xl font-extrabold mb-4">Hi, I'm {{ .Site.Params.author_name }} 👋</h1> 
+        
+        <p class="text-xl text-gray-600">{{ .Site.Params.tagline }}</p>
+        
+        <button class="mt-8 px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition duration-300">
+            View My Work
+        </button>
+    </section>
+  </div>
+
+    {{ .Content }}
+  {{ range site.RegularPages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }} </a></h2>
+    <!-- {{ .Summary }} -->
+  {{ end }}
+{{ end }}
