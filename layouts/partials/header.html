@@ -1,8 +1,25 @@
-<header class="p-6 bg-white shadow-md">
-    <div class="container mx-auto flex justify-between items-center">
-        <a href="/" class="text-xl font-bold text-indigo-600">{{ site.Title }}</a>
-        <div class="space-x-4">
-            {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-        </div>
+ <div class="container mx-auto flex justify-between items-center">
+    <!-- Site Title -->
+    <a href="/" class="text-xl font-bold text-primary-light dark:text-primary-dark">{{ site.Title }}</a>
+
+
+     <!-- Desktop Menu (visible on md+) -->
+    <nav class="hidden md:flex space-x-6">
+  {{ partial "menu.html" (dict "menuID" "main" "page" . "class" "flex space-x-6") }}
+    </nav>
+
+    <!-- Hamburger + Menu -->
+    <div class="flex items-center md:hidden">
+      <!-- Hamburger Button (mobile only) -->
+         <button id="menu-toggle" class="p-2 rounded bg-gray-200 dark:bg-gray-700 text-text-light dark:text-text-dark">☰</button>
+
+
+
+<!-- Full-screen Mobile Menu Overlay -->
+  <!-- Full-screen Mobile Menu Overlay -->
+  <nav id="mobile-menu" class=" fixed inset-0 flex flex-col justify-center items-center space-y-12 transform -translate-x-full transition-transform duration-300 text-3xl bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark md:hidden">
+  {{ partial "menu.html" (dict "menuID" "main" "page" . "class" "flex flex-col justify-center items-center space-y-12 text-3xl") }}
+    <button id="menu-close" class="absolute top-6 right-6 p-2 rounded bg-gray-200 dark:bg-gray-700 text-xl text-text-light dark:text-text-dark">✕</button>
+  </nav>
     </div>
-</header>
+  </div>

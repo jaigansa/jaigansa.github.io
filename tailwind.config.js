@@ -9,7 +9,28 @@ module.exports = {
     "./archetypes/**/*.md", // Scans archetype files (less common, but safe)
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          light: "#ef4444", // red-600
+          dark: "#f87171",
+        },
+        bg: {
+          light: "#f9fafb", // gray-50
+          dark: "#111827",  // gray-900
+        },
+        card: {
+          light: "#ffffff", // white
+          dark: "#1f2937",  // gray-800
+        },
+        text: {
+          light: "#1f2937", // gray-900
+          dark: "#f3f4f6",  // gray-100
+        },
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+     require('@tailwindcss/typography'),
+  ],
 }

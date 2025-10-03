@@ -9,16 +9,20 @@ Renders a menu for the given menu ID.
 
 {{- $page := .page }}
 {{- $menuID := .menuID }}
+{{- $class := .class }}
 
 {{- with index site.Menus $menuID }}
- <nav class="container mx-auto flex justify-between items-center">
-    <ul class="flex space-x-4">
+    <ul class="{{ $class }}">
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </ul>
-  </nav>
+     <!-- Theme Toggle -->
+      <button id="theme-toggle" class="ml-4 p-2 rounded-xl bg-gray-200 dark:bg-gray-700 dark:text-gray-100 transition">
+        🌙
+      </button>
 {{- end }}
 
 {{- define "partials/inline/menu/walk.html" }}
+{{- $class := .class }}
   {{- $page := .page }}
   {{- range .menuEntries }}
     {{- $attrs := dict "href" .URL }}
@@ -34,7 +38,7 @@ Renders a menu for the given menu ID.
       {{- end }}
     {{- end }}
     <li>
-      <a class="text-gray-600 hover:text-indigo-600"
+      <a class="  text-text-light dark:text-text-dark hover:text-primary-light dark:hover:text-primary-dark transition font-medium"
         {{- range $k, $v := $attrs }}
           {{- with $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
@@ -42,7 +46,7 @@ Renders a menu for the given menu ID.
         {{- end -}}
       >{{ $name }}</a>
       {{- with .Children }}
-        <ul>
+        <ul class="{{ $class }}">
           {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
         </ul>
       {{- end }}
