@@ -1,5 +1,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+ 
+   {{ with (templates.Defer (dict "key" "global")) }}
+    {{ partial "head/css.html" . }}
+  {{ end }}
 {{ partialCached "head/css.html" . }}
 

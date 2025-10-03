@@ -1,0 +1,42 @@
+baseURL = 'https://jaigansa.github.io/'
+languageCode = 'en-US'
+title = 'JAIGANESH'
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Projects'
+pageRef = '/projects'
+weight = 20
+
+[[menus.main]]
+name = 'Abouts'
+pageRef = '/abouts'
+weight = 30
+
+[params]
+  author_name = "Jai Ganesh"
+  tagline = "A Web Developer focused on performance and clean code."
+
+
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+  [[build.cachebusters]]
+    source = '(postcss|tailwind)\.config\.js'
+    target = 'css'
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'

@@ -1,6 +1,12 @@
 {{ with resources.Get "css/main.css" }}
-    {{ $css := . | css.PostCSS }}
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
-{{ else }}
-    {{ errorf "Missing CSS resource: 'assets/css/main.css' was not found." }}
+  {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
+  {{ with . | css.TailwindCSS $opts }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ end }}
+  {{ end }}
 {{ end }}
