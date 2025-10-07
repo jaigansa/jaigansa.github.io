@@ -4,17 +4,17 @@
   {{ partial "head.html" . }}
 
 </head>
-<body class="antialiased">
+<body class="min-h-screen w-full flex flex-col items-center font-main bg-base text-content">
 
-<header class="p-6 shadow-md bg-card-light dark:bg-card-dark relative z-50">
+<header class="w-full p-4 shadow-md bg-surface1 text-content relative z-50">
     {{ partial "header.html" . }}
   </header>
 
-  <main  class="container mx-auto px-6 py-8">
+  <main  class="flex-1  px-6 py-8">
     {{ block "main" . }}{{ end }}
   </main>
 
-  <footer class="bg-gray-100 dark:bg-gray-800 mt-12 py-6">
+  <footer class=" w-full bg-surface1  ">
     {{ partial "footer.html" . }}
   </footer>
   

@@ -16,7 +16,7 @@ Renders a menu for the given menu ID.
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </ul>
      <!-- Theme Toggle -->
-      <button id="theme-toggle" class="ml-4 p-2 rounded-xl bg-gray-200 dark:bg-gray-700 dark:text-gray-100 transition">
+      <button id="theme-toggle" class="w-12 h-12 p-2 rounded-full bg-surface2 transition">
         🌙
       </button>
 {{- end }}
@@ -38,7 +38,7 @@ Renders a menu for the given menu ID.
       {{- end }}
     {{- end }}
     <li>
-      <a class="  text-text-light dark:text-text-dark hover:text-primary-light dark:hover:text-primary-dark transition font-medium"
+      <a class="   hover:text-content-low  transition font-medium"
         {{- range $k, $v := $attrs }}
           {{- with $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}

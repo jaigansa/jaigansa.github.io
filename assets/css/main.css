@@ -1,2 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
 @source "hugo_stats.json";
+
+@plugin "@tailwindcss/typography";
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+@theme {
+  --font-main: "Poppins", sans-serif;
+  --font-tamil: "Mukta Malar", sans-serif;
+
+  /* --- NEUTRALS (LIGHT MODE) --- */
+  --color-base: oklch(0.95 0 0);           /* Main Canvas BG (Light Gray) */
+  --color-surface1: oklch(1 0 0);          /* Primary Elevated Surface (Pure White) */
+  --color-surface2: oklch(0.90 0 0);       /* Secondary Elevated Surface (Slightly darker for contrast) */
+  --color-divider: oklch(0.9 0 0);         /* Subtle gray for borders/dividers */
+
+  /* --- TEXT (LIGHT MODE) --- */
+  --color-content: oklch(0.12 0 0);        /* Main Text Color (Near-Black) */
+  --color-content-low: oklch(0.5 0 0);     /* Secondary Text Color (Medium Gray) */
+  
+  /* --- PRIMARY & ACCENT COLORS (USING PALETTE HUES - Adjusted for light BG) --- */
+  --color-primary: oklch(0.55 0.25 50);    /* Orange/Red (from #FF652F, darker for contrast) */
+  --color-primary-fg: oklch(0.95 0 0);     /* White text on primary */
+  
+  --color-accent-error: oklch(0.55 0.25 20); /* Classic Red */
+  --color-accent-success: oklch(0.5 0.15 152);/* Deep Green (from #14A76C, darker for contrast) */
+  --color-accent-warning: oklch(0.75 0.2 99); /* Bright Yellow (from #FFE400, darker for contrast) */
+
+  --color-dwhite: oklch(1 0 0); 
+}
+
+@layer theme {
+  .dark {
+    /* --- NEUTRALS (DARK MODE) --- */
+    --color-base: oklch(0.18 0 0);           /* #272727: Main Dark BG */
+    --color-surface1: oklch(0.30 0.04 260);  /* Elevated surface (Lighter than base) */
+    --color-surface2: oklch(0.50 0.06 260);  /* Highly elevated surface (Modals/Dropdowns) */
+    --color-divider: oklch(0.35 0.05 260);   /* Slightly Lighter for dark borders */
+
+    /* --- TEXT (DARK MODE) --- */
+    --color-content: oklch(0.90 0 0);        /* Light Text (Off-White) */
+    --color-content-low: oklch(0.48 0 0);    /* #747474: Secondary Text */
+    
+    /* --- PRIMARY & ACCENT COLORS (USING PALETTE HUES - Adjusted for dark BG) --- */
+    --color-primary: oklch(0.67 0.28 50);    /* #FF652F: Primary (Vibrant Orange) */
+    --color-primary-fg: oklch(0.1 0 0);      /* Dark text on primary */
+    
+    --color-accent-error: oklch(0.7 0.3 20);     /* Classic Red */
+    --color-accent-success: oklch(0.55 0.18 152);/* #14A76C: Success (Deep Green) */
+    --color-accent-warning: oklch(0.93 0.17 99); /* #FFE400: Warning (Bright Yellow) */
+    
+    --color-dwhite: oklch(1 0 0); 
+  }
+}
