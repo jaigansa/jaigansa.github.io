@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* 
+  Enable manual dark mode toggling using the 'dark' class.
+*/
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-twitter: #1d9bf0;
+  --color-instagram: #E1306C;
+  --font-sans: 'Inter', 'ui-sans-serif', 'system-ui', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 transition-colors duration-300 antialiased;
+    @apply dark:bg-[#020617] dark:text-slate-100;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight font-extrabold;
+  }
+}
+
+/* 
+  Custom layout variables for legacy components 
+  that haven't been fully migrated to utility classes.
+*/
+:root {
+  --bg-color: #ffffff;
+  --text-color: #0f172a;
+  --border-color: #f1f5f9;
+  --card-bg: #ffffff;
+  --hover-bg: #f8fafc;
+  --secondary-text: #475569;
+}
+
+.dark {
+  --bg-color: #020617;
+  --text-color: #f1f5f9;
+  --border-color: #1e293b;
+  --card-bg: #0f172a;
+  --hover-bg: #1e293b;
+  --secondary-text: #94a3b8;
+}

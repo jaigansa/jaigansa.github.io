@@ -1,0 +1,272 @@
+/* Instagram Single Post Modal Styles */
+
+.insta-modal-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    display: flex;
+    min-height: 600px;
+    height: 85vh;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.insta-card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* LEFT SIDE: Media/Carousel */
+.insta-media-section {
+    flex: 1.5;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.7);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.carousel-nav.prev { left: 10px; }
+.carousel-nav.next { right: 10px; }
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #fff;
+}
+
+/* RIGHT SIDE: Details */
+.insta-details-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--border-color);
+    background: var(--card-bg);
+}
+
+.insta-header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.insta-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.insta-avatar.small {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+}
+
+.insta-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.insta-user-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+.insta-username {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.insta-location {
+    font-size: 0.75rem;
+    color: var(--secondary-text);
+}
+
+.insta-more-options {
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/* Comments Area */
+.insta-comments-area {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.comment-row {
+    display: flex;
+    font-size: 0.9rem;
+    align-items: flex-start;
+}
+
+.comment-content {
+    flex: 1;
+    word-break: break-word;
+    color: var(--text-color);
+}
+
+.comment-content .insta-username {
+    margin-right: 0.3rem;
+}
+
+.comment-heart {
+    font-size: 0.8rem;
+    color: var(--secondary-text);
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+/* Actions Footer */
+.insta-actions {
+    padding: 0.75rem 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.action-icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.action-icons .bookmark {
+    margin-left: auto;
+}
+
+.likes-count {
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    color: var(--text-color);
+}
+
+.post-date {
+    font-size: 0.65rem;
+    color: var(--secondary-text);
+    text-transform: uppercase;
+}
+
+/* Add Comment Input */
+.insta-add-comment {
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+}
+
+.insta-add-comment input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.insta-add-comment button {
+    background: none;
+    border: none;
+    color: var(--color-twitter); /* Use Twitter blue for consistency or instagram color */
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .insta-modal-container {
+        flex-direction: column;
+        height: auto;
+        min-height: auto;
+        margin: 0;
+        border: none;
+    }
+    
+    .insta-media-section {
+        height: 100vw;
+    }
+    
+    .insta-details-section {
+        border-left: none;
+    }
+    
+    .insta-comments-area {
+        display: none;
+    }
+}

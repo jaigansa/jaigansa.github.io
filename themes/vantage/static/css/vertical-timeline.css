@@ -1,0 +1,106 @@
+/* Journey Map - Professional Stabilization */
+
+/* Respect the site's header height */
+body.timeline-view main {
+    max-width: none !important;
+    padding-top: 80px !important; /* Matches header height */
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.journey-viewport {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    background-color: var(--bg-color);
+    background-image: radial-gradient(var(--color-twitter) 1px, transparent 1px);
+    background-size: 60px 60px;
+}
+
+/* Desktop Mechanism */
+@media (min-width: 1025px) {
+    .journey-track {
+        display: flex;
+        align-items: center;
+        min-width: max-content;
+        height: 100%;
+        padding: 0 20vw;
+        position: relative;
+    }
+
+    /* The actual horizontal line */
+    .journey-track::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        height: 2px;
+        background: var(--color-twitter);
+        opacity: 0.2;
+        z-index: 0;
+        transform: translateY(-50%);
+    }
+
+    .milestone-node {
+        width: 450px; /* Space between milestones */
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+    }
+
+    .milestone-content {
+        width: 340px;
+        position: absolute;
+        z-index: 20;
+    }
+}
+
+/* Mobile Styles (Vertical Mechanism) */
+@media (max-width: 1024px) {
+    .journey-viewport {
+        height: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 4rem 0;
+    }
+
+    .journey-track {
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    .milestones-container {
+        gap: 4rem;
+    }
+
+    .milestone-node {
+        width: 100%;
+    }
+
+    .milestone-content {
+        flex-grow: 1;
+        max-width: calc(100% - 4rem);
+    }
+
+    .hotspot-wrapper {
+        margin-left: 0.5rem; /* Aligns with the 8rem left-line */
+    }
+}
+
+/* Common Polish */
+.milestone-content a {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.milestone-content a:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-twitter);
+    box-shadow: 0 30px 60px -12px rgba(29, 155, 240, 0.25);
+}

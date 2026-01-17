@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (Processed) -->
+    {{ $styles := resources.Get "css/main.css" | postCSS (dict "config" "./postcss.config.js") }}
+    {{ if hugo.IsServer }}
+      <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+    {{ else }}
+      {{ $styles := $styles | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+    {{ end }}
+
+    <!-- Legacy Styles (Preserved for Layouts) -->
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/resume.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/vertical-timeline.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/insta-single.css" | relURL }}">
+    
+    <!-- Init Dark Mode to prevent FOUC -->
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        document.documentElement.classList.toggle(
+            "dark",
+            localStorage.theme === "dark" ||
+                (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
+        );
+    </script>
+</head>
+<body class="flex flex-col min-h-screen bg-[var(--bg-color)] text-[var(--text-color)] transition-colors duration-300 {{ if eq .Section "works" }}gallery-view{{ end }} {{ if eq .Section "journal" }}timeline-view{{ end }}">
+    
+    <!-- Floating "Island" Navigation -->
+    <div class="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
+        <nav class="pointer-events-auto flex items-center justify-between w-full max-w-6xl px-2 pl-6 py-2 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/60 dark:border-slate-700/60 shadow-lg shadow-slate-200/20 dark:shadow-black/20 rounded-full transition-all duration-300">
+            
+            <!-- Logo -->
+            <a href="/" class="font-bold text-lg tracking-tight hover:text-twitter transition-colors mr-6">
+                {{ .Site.Title }}
+            </a>
+            
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center gap-1 bg-slate-100/50 dark:bg-slate-800/50 px-1 py-1 rounded-full border border-slate-200/50 dark:border-slate-700/50">
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL | relURL }}" class="px-4 py-1.5 rounded-full text-sm font-medium transition-all {{ if or (eq $.RelPermalink .URL) (and (eq .URL "/journal/") (eq $.Section "journal")) }}bg-white dark:bg-slate-700 text-twitter shadow-sm{{ else }}text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white{{ end }}">
+                    {{ .Name }}
+                </a>
+                {{ end }}
+            </div>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-2 pl-6">
+                <!-- Search Module -->
+                <div class="relative group" id="search-container">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-4 w-4 text-slate-400 group-focus-within:text-twitter transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        placeholder="Search..." 
+                        class="block w-32 md:w-64 pl-9 pr-12 py-2 bg-slate-100 dark:bg-slate-800/50 border border-transparent focus:border-twitter/20 rounded-full text-xs focus:ring-4 focus:ring-twitter/10 focus:bg-white dark:focus:bg-slate-900 transition-all outline-none"
+                    >
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                        <kbd class="hidden md:inline-flex items-center px-1.5 py-0.5 border border-slate-300 dark:border-slate-600 rounded text-[10px] font-sans font-medium text-slate-400 bg-white dark:bg-slate-800 shadow-sm">
+                            /
+                        </kbd>
+                    </div>
+                    <div 
+                        id="search-results" 
+                        class="absolute right-0 mt-4 w-72 md:w-[28rem] bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl hidden z-50 overflow-hidden animate-in fade-in zoom-in-95 duration-200"
+                    >
+                        <div class="p-2 max-h-[32rem] overflow-y-auto" id="search-results-list">
+                            <!-- Results will be injected here -->
+                        </div>
+                        <div class="px-4 py-2 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50 flex justify-between items-center">
+                            <span class="text-[10px] text-slate-400 font-medium">Fuzzy search powered by Fuse.js</span>
+                            <div class="flex gap-2">
+                                <span class="text-[10px] text-slate-400 inline-flex items-center gap-1"><kbd class="px-1 border border-slate-300 dark:border-slate-600 rounded">ESC</kbd> to close</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" type="button" class="md:hidden p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+
+                <!-- Theme Toggle -->
+                <div class="scale-90">
+                    {{ partial "theme-toggle.html" . }}
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu Overlay (Separate) -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md hidden transition-opacity duration-200 opacity-0 pt-24 px-6">
+        <div class="flex flex-col space-y-4 text-center">
+            {{ range .Site.Menus.main }}
+            <a href="{{ .URL | relURL }}" class="text-2xl font-bold text-slate-800 dark:text-slate-100 hover:text-twitter py-2">
+                {{ .Name }}
+            </a>
+            {{ end }}
+            <button id="close-mobile-menu" class="mt-8 text-sm text-slate-500 underline">Close Menu</button>
+        </div>
+    </div>
+
+    <!-- Main Content (Added pt-28 to account for floating header) -->
+    <main class="flex-grow w-full mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-12 {{ if eq .Section "works" }}max-w-6xl{{ else if eq .Section "journal" }}max-w-7xl{{ else }}max-w-6xl{{ end }}">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="border-t border-[var(--border-color)] py-12 mt-auto bg-white dark:bg-slate-900">
+        <div class="max-w-6xl mx-auto px-4 text-center space-y-4">
+            <p class="text-sm text-[var(--secondary-text)] font-bold uppercase tracking-widest">&copy; {{ now.Year }} {{ .Site.Title }}.</p>
+        </div>
+    </footer>
+
+    {{ partial "head/js.html" . }}
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-mobile-menu');
+        const menu = document.getElementById('mobile-menu');
+
+        function toggleMenu() {
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                // Small delay to allow display:block to apply before opacity transition
+                setTimeout(() => {
+                    menu.classList.remove('opacity-0');
+                    menu.classList.add('opacity-100');
+                }, 10);
+            } else {
+                menu.classList.remove('opacity-100');
+                menu.classList.add('opacity-0');
+                setTimeout(() => {
+                    menu.classList.add('hidden');
+                }, 200);
+            }
+        }
+
+        if(btn) btn.addEventListener('click', toggleMenu);
+        if(closeBtn) closeBtn.addEventListener('click', toggleMenu);
+    </script>
+</body>
+</html>

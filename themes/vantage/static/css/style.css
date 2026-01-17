@@ -1,0 +1,111 @@
+/* Layout Specific Styles - inheriting vars from main.css */
+
+/* Remove global body/nav styles as they are now handled by Tailwind in baseof.html */
+
+/* Twitter Style Feed (Legacy/Backup if needed) */
+.tweet {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s;
+}
+
+.tweet:hover {
+    background-color: var(--hover-bg);
+    cursor: pointer;
+}
+
+.tweet-header {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.tweet-author {
+    font-weight: 700;
+}
+
+.tweet-meta {
+    color: var(--secondary-text);
+}
+
+.tweet-content {
+    font-size: 1rem;
+    white-space: pre-wrap;
+}
+
+/* Instagram Style Grid */
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+}
+
+@media (min-width: 736px) {
+    .gallery-grid {
+        gap: 28px;
+        padding: 0 20px;
+    }
+}
+
+.gallery-item {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background-color: var(--hover-bg); /* Adaptive placeholder */
+    display: block;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.2s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    color: white;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-item:hover .gallery-image {
+    filter: brightness(0.8);
+}
+
+.gallery-stats {
+    display: flex;
+    gap: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Single Page */
+.page-content {
+    padding: 1rem;
+}
+
+.page-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}

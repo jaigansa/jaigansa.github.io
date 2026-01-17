@@ -1,0 +1,91 @@
+{{ define "main" }}
+<div class="space-y-12">
+    <!-- Header Section -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b-2 border-slate-100 dark:border-slate-800 pb-8">
+        <div class="space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-twitter/10 text-twitter border border-twitter/20">
+                <span class="text-[10px] font-black uppercase tracking-widest">Case Study</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tighter text-slate-900 dark:text-white uppercase leading-none">
+                {{ .Title }}
+            </h1>
+            <p class="text-lg text-slate-500 dark:text-slate-400 font-medium max-w-2xl leading-relaxed">
+                {{ .Params.description | default .Summary }}
+            </p>
+        </div>
+        
+        <!-- Quick Specs -->
+        <div class="flex gap-4">
+            <div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-2xl border border-slate-100 dark:border-slate-800 min-w-[120px]">
+                <p class="text-[9px] font-black text-slate-400 uppercase mb-1">Build Time</p>
+                <p class="text-sm font-bold">{{ .Params.time }}</p>
+            </div>
+            <div class="bg-slate-900 text-white p-4 rounded-2xl shadow-xl min-w-[120px]">
+                <p class="text-[9px] font-black text-white/50 uppercase mb-1">Starting Price</p>
+                <p class="text-sm font-black text-twitter">₹{{ .Params.price }}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Grid: Professional Mosaic Presentation -->
+    {{ $images := .Resources.ByType "image" }}
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px] md:grid-flow-dense">
+        {{ if $images }}
+            {{ range $index, $image := $images }}
+                {{ $span := "" }}
+                {{ $remainder := mod $index 7 }}
+                
+                {{ if eq $remainder 0 }}
+                    {{ $span = "md:col-span-2 md:row-span-2" }} {{/* Big Feature */}}
+                {{ else if eq $remainder 3 }}
+                    {{ $span = "md:row-span-2" }} {{/* Tall Detail */}}
+                {{ else if eq $remainder 6 }}
+                    {{ $span = "md:col-span-2" }} {{/* Wide Break */}}
+                {{ end }}
+                
+                <div class="{{ $span }} relative group overflow-hidden rounded-[2.5rem] bg-slate-100 dark:bg-slate-800 border-2 border-transparent hover:border-twitter transition-all duration-500 shadow-sm hover:shadow-2xl">
+                    {{ if hugo.IsServer }}
+                        <img 
+                            src="{{ .RelPermalink }}" 
+                            alt="{{ $.Title }}" 
+                            class="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 group-hover:blur-[2px]"
+                            loading="lazy"
+                        >
+                    {{ else }}
+                        {{ $webp := .Process "webp q75" }}
+                        <img 
+                            src="{{ $webp.RelPermalink }}" 
+                            alt="{{ $.Title }}" 
+                            class="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 group-hover:blur-[2px]"
+                            loading="lazy"
+                        >
+                    {{ end }}
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-8">
+                        <div class="space-y-1 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <p class="text-twitter text-[10px] font-black uppercase tracking-[0.3em]">Project Detail</p>
+                            <p class="text-white text-sm font-bold opacity-80 uppercase tracking-wider">View — 0{{ add $index 1 }}</p>
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+        {{ end }}
+    </div>
+
+    <!-- Content & CTA -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-8">
+        <div class="lg:col-span-8 prose prose-lg dark:prose-invert max-w-none">
+            {{ .Content }}
+        </div>
+        
+        <div class="lg:col-span-4 space-y-6">
+            <div class="bg-white dark:bg-slate-950 p-8 rounded-[2.5rem] border-2 border-slate-50 dark:border-slate-800 sticky top-32">
+                <h3 class="text-xl font-black text-slate-900 dark:text-white tracking-tighter uppercase mb-6">Interested in this build?</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-8">
+                    We can customize the Tata Ace body to your specific payload requirements and business needs.
+                </p>
+                <a href="mailto:{{ .Site.Params.contact_email }}?subject=Inquiry: {{ .Title }}" class="block w-full text-center py-4 bg-slate-900 dark:bg-slate-100 dark:text-slate-900 text-white rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-twitter hover:text-white transition-all">Request Custom Quote</a>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

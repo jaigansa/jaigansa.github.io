@@ -1,42 +1,100 @@
 baseURL = 'https://jaigansa.github.io/'
-languageCode = 'en-US'
-title = 'JAIGANESH'
+languageCode = 'en-us'
+title = 'Jai'
+theme = 'vantage'
 
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
+[server]
+  # Speed up by ignoring heavy directories during watch
+  [[server.mounts]]
+    source = 'node_modules'
+    target = 'node_modules'
+    ignoreFiles = ['**']
+  [[server.mounts]]
+    source = 'public'
+    target = 'public'
+    ignoreFiles = ['**']
 
-[[menus.main]]
-name = 'Projects'
-pageRef = '/projects'
-weight = 20
-
-[[menus.main]]
-name = 'Abouts'
-pageRef = '/abouts'
-weight = 30
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
 
 [params]
-  author_name = "Jai Ganesh"
-  tagline = "A Web Developer focused on performance and clean code."
+  contact_email = "srijaiganeshindustry@gmail.com"
+  avatar = "/images/avatar.webp"
+  
+  # Hero Section
+  [params.hero]
+    name = "Jai Ganesh"
+    title = "Metalwork & Digital Creator"
+    bio = "I'm a creator working at the intersection of heavy industry and digital innovation. By day, I weld and fabricate custom truck components; by night, I build web applications and stream gaming content."
 
+  # Social Links (QR codes will be generated for these)
+  [params.social]
+    instagram = "https://instagram.com/jaigansa"
+    youtube = "https://youtube.com/@jaigansa"
+    github = "https://github.com/jaigansa"
+    linkedin = "https://linkedin.com/in/jaigansa"
+    twitter = "https://twitter.com/jaigansa"
 
+  # Live Status Section
+  [params.status]
+    workshop = "Building custom BharatBenz sleeper bunk"
+    streaming = "Battlegrounds Mobile India"
+    platform = "Youtube"
+    schedule = "Live every weekend at 12 PM"
 
-[build]
-  [build.buildStats]
-    enable = true
-  [[build.cachebusters]]
-    source = 'assets/notwatching/hugo_stats\.json'
-    target = 'css'
-  [[build.cachebusters]]
-    source = '(postcss|tailwind)\.config\.js'
-    target = 'css'
-[module]
-  [[module.mounts]]
-    source = 'assets'
-    target = 'assets'
-  [[module.mounts]]
-    disableWatch = true
-    source = 'hugo_stats.json'
-    target = 'assets/notwatching/hugo_stats.json'
+  # Links Hub
+  [params.channels]
+    fabrication = "https://youtube.com/@srijaiganeshindustry"
+    gaming = "https://youtube.com/@jaistreams"
+    digital = "https://youtube.com/@jaigansa"
+  
+  [params.links]
+    webapps = "https://jaigansa.github.io/webapps/"
+    webgames = "https://jaigansa.github.io/webgames/"
+
+  # Professional Data
+  [[params.experience]]
+    role = "Lead Fabricator"
+    company = "Sri Jai Ganesh Industry"
+    dates = "2020 - Present"
+    description = "Specializing in Truck body modifications, custom cabin interiors, and heavy-duty chassis reinforcement."
+  
+  [[params.experience]]
+    role = "Full-Stack Developer"
+    company = "Digital Works"
+    dates = "2018 - 2020"
+    description = "Built custom CAD-to-Web visualization tools and interactive management dashboards for industrial clients."
+
+  [params.skills]
+    list = ["Arc Welding", "TIG/MIG", "Truck Body Design", "CAD/SolidWorks", "React & Hugo", "Tailwind CSS"]
+
+  # Global FAQ
+  [[params.faqs]]
+    q = "Do you take custom orders for vehicle accessories?"
+    a = "Yes! I specialize in bespoke truck modifications, from interior beds to external body work. Send me a message via email to discuss your requirements."
+  [[params.faqs]]
+    q = "What is your streaming schedule and PC specs?"
+    a = "I stream every weekend at 12 PM. My setup: RTX 3080, Ryzen 9 5900X, 32GB RAM, and professional sim-racing gear."
+  [[params.faqs]]
+    q = "How do you combine metalwork with digital design?"
+    a = "Every project starts with a digital blueprint. I use CAD software to model truck components before I touch the welder for maximum precision."
+  [[params.faqs]]
+    q = "What materials do you primarily work with?"
+    a = "I work mainly with high-grade steel and aluminum. Depending on the project requirements, I also integrate custom digital electronics."
+  [[params.faqs]]
+    q = "Can I commission a custom digital design without fabrication?"
+    a = "Absolutely. I provide digital-only design services for truck body mockups. You can take these blueprints to any local workshop."
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    url = '/'
+    weight = 5
+  [[menus.main]]
+    name = 'Post'
+    url = '/journal/'
+    weight = 10
+  [[menus.main]]
+    name = 'Gallery'
+    url = '/works/'
+    weight = 20

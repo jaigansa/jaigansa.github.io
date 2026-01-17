@@ -1,0 +1,21 @@
+<a href="{{ .RelPermalink }}" class="block w-80 p-6 bg-white dark:bg-slate-950 rounded-[2.5rem] border-2 border-slate-100 dark:border-slate-800 shadow-2xl hover:border-twitter transition-all group">
+    {{ $img := "" }}
+    {{ if .Params.image }}
+        {{ $res := .Resources.GetMatch .Params.image }}{{ if $res }}{{ $img = ($res.Process "webp q75").RelPermalink }}{{ end }}
+    {{ end }}
+
+    {{ if $img }}
+    <div class="w-full h-44 mb-5 overflow-hidden rounded-3xl bg-slate-100 dark:bg-slate-900">
+        <img src="{{ $img }}" alt="{{ .Title }}" class="w-full h-full object-cover group-hover:scale-110 group-hover:blur-[2px] transition-all duration-700">
+    </div>
+    {{ end }}
+    
+    <h2 class="text-xl font-black text-slate-950 dark:text-white mb-3 leading-tight uppercase tracking-tight">{{ .Title }}</h2>
+    
+    <div class="flex items-center justify-between mt-auto">
+        <span class="px-3 py-1 bg-twitter/5 text-twitter text-[9px] font-black uppercase tracking-widest rounded-full border border-twitter/10">
+            {{ .Date.Format "Jan 2006" }}
+        </span>
+        <svg class="w-5 h-5 text-twitter transform translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+    </div>
+</a>

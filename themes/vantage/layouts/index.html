@@ -1,0 +1,294 @@
+{{ define "main" }}
+<div class="space-y-24 pb-20">
+    
+    <!-- Hero Section: Clean & Bold -->
+    <section class="animate-in fade-in slide-in-from-bottom-4 duration-700">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Large Avatar -->
+            {{ if .Site.Params.avatar }}
+            <div class="lg:col-span-4 flex justify-center lg:justify-start">
+                <div class="relative group">
+                    <!-- High-end Glow Effect -->
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-twitter to-blue-600 rounded-[3.5rem] blur-2xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
+                    
+                    {{ $avatar := resources.Get .Site.Params.avatar }}
+                    {{ if $avatar }}
+                        {{ $processed := $avatar.Process "webp q80" }}
+                        <img 
+                            src="{{ $processed.RelPermalink }}" 
+                            alt="{{ .Site.Params.hero.name }}" 
+                            class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-[3rem] object-cover border-4 border-white dark:border-slate-800 shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:-rotate-1"
+                        >
+                    {{ else }}
+                        <img 
+                            src="https://ui-avatars.com/api/?name={{ .Site.Params.hero.name }}&background=1d9bf0&color=fff&size=512" 
+                            class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-[3rem] object-cover"
+                        >
+                    {{ end }}
+                    
+                    <!-- Decorative Badge on Avatar -->
+                    <div class="absolute -bottom-4 -right-4 bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-800 hidden md:block group-hover:-translate-y-2 transition-transform duration-500">
+                        <svg class="w-8 h-8 text-twitter" fill="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+
+            <!-- Text Content -->
+            <div class="lg:col-span-8 space-y-8">
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-twitter/10 text-twitter border border-twitter/20">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-twitter opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-twitter"></span>
+                        </span>
+                        <span class="text-[10px] font-black uppercase tracking-widest">Available for projects</span>
+                    </div>
+                    <h1 class="text-6xl md:text-8xl font-black tracking-tighter text-slate-950 dark:text-white leading-[0.85]">
+                        {{ .Site.Params.hero.name }}
+                    </h1>
+                </div>
+                <p class="text-xl md:text-2xl font-medium text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+                    {{ .Site.Params.hero.bio }}
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Pulse: Live & Skills -->
+    <section class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div class="md:col-span-8 bg-slate-950 dark:bg-slate-900 rounded-[2.5rem] p-10 text-white relative overflow-hidden border border-slate-800 flex flex-col justify-between min-h-[320px]">
+            <div class="relative z-10">
+                <h3 class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 mb-8">Current Activity</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+                    <div class="space-y-4">
+                        <div class="p-3 w-fit bg-blue-500/10 text-blue-400 rounded-2xl border border-blue-500/20">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <div>
+                            <p class="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1">In the Workshop</p>
+                            <p class="text-xl font-bold leading-tight">{{ .Site.Params.status.workshop }}</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="p-3 w-fit bg-purple-500/10 text-purple-400 rounded-2xl border border-purple-500/20">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div>
+                            <p class="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1">Streaming</p>
+                            <p class="text-xl font-bold leading-tight">{{ .Site.Params.status.streaming }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative z-10 mt-10 pt-6 border-t border-slate-800 flex items-center justify-between text-slate-500 text-[10px] font-bold uppercase tracking-widest">
+                <span>{{ .Site.Params.status.platform }} {{ .Site.Params.status.schedule }}</span>
+                <span class="flex items-center gap-2"><span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span> Live Sync Enabled</span>
+            </div>
+        </div>
+        <div class="md:col-span-4 bg-white dark:bg-slate-950 p-10 rounded-[2.5rem] border-2 border-slate-50 dark:border-slate-800 flex flex-col">
+            <h3 class="text-xl font-black text-slate-900 dark:text-white tracking-tighter uppercase mb-8">Stack</h3>
+            <div class="flex flex-wrap gap-2">
+                {{ range .Site.Params.skills.list }}
+                <span class="px-4 py-2 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 rounded-xl text-[10px] font-black border border-slate-200 dark:border-slate-800 hover:border-twitter transition-all uppercase tracking-wider">{{ . }}</span>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecosystem Hub -->
+    <section class="space-y-12">
+        <div class="flex items-center gap-4">
+            <h2 class="text-sm font-black uppercase tracking-[0.4em] text-slate-400">Ecosystem Hub</h2>
+            <div class="h-[1px] flex-grow bg-slate-100 dark:bg-slate-800"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {{ range (slice 
+                (dict "title" "Gallery" "url" "/works/" "icon" "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10")
+                (dict "title" "App Suite" "url" .Site.Params.links.webapps "icon" "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4")
+                (dict "title" "Game Arcade" "url" .Site.Params.links.webgames "icon" "M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z")
+            ) }}
+            <a href="{{ .url }}" target="{{ if hasPrefix .url "http" }}_blank{{ end }}" class="group relative bg-white dark:bg-slate-900 p-8 rounded-3xl border-2 border-slate-50 dark:border-slate-800 hover:border-twitter transition-all hover:-translate-y-1 h-32 flex items-center overflow-hidden">
+                <!-- Icon (Hidden on Hover) -->
+                <div class="w-12 h-12 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white rounded-2xl flex items-center justify-center group-hover:opacity-0 group-hover:scale-50 transition-all duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ .icon }}"></path></svg>
+                </div>
+
+                <!-- Title (Centered on Hover) -->
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                    <h4 class="text-lg font-black text-twitter uppercase tracking-widest">{{ .title }}</h4>
+                </div>
+
+                <!-- Subtle Static Title (Visible by Default) -->
+                <div class="ml-6 group-hover:opacity-0 transition-opacity duration-300">
+                    <h4 class="text-sm font-black text-slate-400 uppercase tracking-wider">{{ .title }}</h4>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="space-y-12">
+        <div class="flex items-center gap-4">
+            <h2 class="text-sm font-black uppercase tracking-[0.4em] text-slate-400">Professional History</h2>
+            <div class="h-[1px] flex-grow bg-slate-100 dark:bg-slate-800"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {{ range .Site.Params.experience }}
+            <div class="p-8 bg-white dark:bg-slate-950 rounded-[2.5rem] border-2 border-slate-50 dark:border-slate-800 hover:border-twitter transition-all">
+                <div class="flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="space-y-1">
+                            <h4 class="text-2xl font-black text-slate-900 dark:text-white leading-tight">{{ .role }}</h4>
+                            <p class="text-[10px] font-black text-twitter uppercase tracking-[0.2em]">{{ .company }}</p>
+                        </div>
+                        <span class="px-3 py-1 bg-slate-50 dark:bg-slate-900 text-slate-400 text-[9px] font-black uppercase tracking-widest rounded-full border border-slate-100 dark:border-slate-800 whitespace-nowrap">{{ .dates }}</span>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed font-medium flex-grow">
+                        {{ .description }}
+                    </p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+
+    <!-- Connect & Social: Bento Style -->
+    <section class="space-y-12">
+        <div class="flex items-center gap-4">
+            <h2 class="text-sm font-black uppercase tracking-[0.4em] text-slate-400">Connect</h2>
+            <div class="h-[1px] flex-grow bg-slate-100 dark:bg-slate-800"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Social Card -->
+            <div class="md:col-span-2 lg:col-span-2 bg-white dark:bg-slate-950 p-10 rounded-[2.5rem] border-2 border-slate-50 dark:border-slate-800 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-black text-slate-900 dark:text-white tracking-tighter uppercase mb-4">Social Presence</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-8">Follow my workshop builds, code updates, and live streams across platforms.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                    {{ range $name, $url := .Site.Params.social }}
+                    <a href="{{ $url }}" target="_blank" class="social-icon-trigger group flex items-center justify-center sm:justify-start gap-4 px-6 py-4 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-twitter hover:bg-twitter/5 transition-all" data-target="{{ $name }}">
+                        <span class="text-slate-400 group-hover:text-twitter transition-colors shrink-0">
+                            {{ if eq $name "instagram" }}<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.074 4.771 4.85 0 1.266-.012 1.645-.07 4.85-.148 3.252-1.074 4.771-4.85 4.771-1.266.07-1.645.012-4.85.07-3.252-.148-4.771-1.074-4.771-4.85 0-1.266.012-1.645.07-4.85.148-3.252 1.074-4.771 4.85-4.771 1.266-.07 1.645-.012 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>{{ end }}
+                            {{ if eq $name "twitter" }}<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>{{ end }}
+                            {{ if eq $name "github" }}<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.082.824-.26.824-.578 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.151-1.305.425-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>{{ end }}
+                            {{ if eq $name "linkedin" }}<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>{{ end }}
+                            {{ if eq $name "youtube" }}<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.377.505 9.377.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>{{ end }}
+                        </span>
+                        <span class="text-sm font-black uppercase tracking-widest text-slate-500 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">{{ $name }}</span>
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+
+            <!-- QR Card -->
+            <div class="bg-white dark:bg-slate-950 p-10 rounded-[2.5rem] border-2 border-slate-50 dark:border-slate-800 flex flex-col items-center justify-center space-y-6">
+                <div class="relative p-5 bg-slate-50 dark:bg-slate-900 rounded-3xl shadow-inner group">
+                    <div id="qr-main" class="qr-code-instance transition-all duration-300 transform scale-100 opacity-100">
+                        {{ $qrMain := images.QR .Site.BaseURL }}
+                        <img src="{{ $qrMain.RelPermalink }}" alt="Site QR" class="w-28 h-28">
+                    </div>
+                    {{ range $name, $url := .Site.Params.social }}
+                    <div id="qr-{{ $name }}" class="qr-code-instance absolute inset-0 flex items-center justify-center transition-all duration-300 transform scale-90 opacity-0 pointer-events-none p-5 bg-slate-50 dark:bg-slate-900 rounded-3xl">
+                        {{ $qr := images.QR $url }}
+                        <img src="{{ $qr.RelPermalink }}" alt="{{ $name }} QR" class="w-28 h-28">
+                    </div>
+                    {{ end }}
+                </div>
+                <p class="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em]" id="qr-label">Scan to Share Profile</p>
+            </div>
+
+            <!-- CTA Card -->
+            <div class="bg-slate-950 rounded-[2.5rem] p-10 text-white flex flex-col justify-between border border-slate-800 relative overflow-hidden group">
+                <div class="relative z-10">
+                    <h3 class="text-xl font-black tracking-tighter uppercase mb-4">Let's Build<br>Something</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Available for vehicle builds & digital work.</p>
+                </div>
+                <a href="mailto:{{ .Site.Params.contact_email }}" class="relative z-10 block w-full text-center py-4 bg-twitter text-white rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-blue-400 transition-all">Inquire Now</a>
+                <div class="absolute -bottom-6 -right-6 opacity-10 group-hover:scale-110 transition-transform duration-700">
+                    <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Knowledge Base: Clean 2-Column FAQ -->
+    <section class="space-y-12">
+        <div class="flex items-center gap-4">
+            <h2 class="text-sm font-black uppercase tracking-[0.4em] text-slate-400">Knowledge Base</h2>
+            <div class="h-[1px] flex-grow bg-slate-100 dark:bg-slate-800"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {{ range .Site.Params.faqs }}
+            <details class="group bg-white dark:bg-slate-950 rounded-3xl border-2 border-slate-50 dark:border-slate-800 overflow-hidden hover:border-twitter transition-all h-fit">
+                <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-sm text-slate-900 dark:text-white hover:text-twitter list-none select-none">
+                    <span class="pr-6">{{ .q }}</span>
+                    <svg class="w-5 h-5 text-slate-300 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </summary>
+                <div class="px-6 pb-6 text-slate-500 dark:text-slate-400 text-xs leading-relaxed border-t border-slate-50 dark:border-slate-800 pt-4">
+                    {{ .a }}
+                </div>
+            </details>
+            {{ end }}
+        </div>
+    </section>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const triggers = document.querySelectorAll('.social-icon-trigger');
+        const mainQr = document.getElementById('qr-main');
+        const instances = document.querySelectorAll('.qr-code-instance');
+        const label = document.getElementById('qr-label');
+        
+        let lockQr = false;
+
+        const showQr = (target) => {
+            instances.forEach(inst => {
+                inst.classList.add('opacity-0', 'scale-90', 'pointer-events-none');
+                inst.classList.remove('opacity-100', 'scale-100');
+            });
+            
+            const active = document.getElementById(`qr-${target}`);
+            if(active) {
+                active.classList.remove('opacity-0', 'scale-90', 'pointer-events-none');
+                active.classList.add('opacity-100', 'scale-100');
+                label.textContent = `Scan for ${target.charAt(0).toUpperCase() + target.slice(1)}`;
+                label.classList.add('text-twitter');
+            }
+        };
+
+        const resetQr = () => {
+            lockQr = false;
+            instances.forEach(inst => {
+                inst.classList.add('opacity-0', 'scale-90', 'pointer-events-none');
+                inst.classList.remove('opacity-100', 'scale-100');
+            });
+            mainQr.classList.remove('opacity-0', 'scale-90', 'pointer-events-none');
+            mainQr.classList.add('opacity-100', 'scale-100');
+            label.textContent = 'Scan to share profile';
+            label.classList.remove('text-twitter');
+        };
+
+        triggers.forEach(trigger => {
+            trigger.addEventListener('mouseenter', () => {
+                if (!lockQr) showQr(trigger.getAttribute('data-target'));
+            });
+            trigger.addEventListener('mouseleave', () => {
+                if (!lockQr) resetQr();
+            });
+            trigger.addEventListener('click', (e) => {
+                if (window.innerWidth < 1024) {
+                    e.preventDefault();
+                    const target = trigger.getAttribute('data-target');
+                    showQr(target);
+                    lockQr = true;
+                }
+            });
+        });
+    });
+</script>
+{{ end }}
