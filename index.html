@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Portfolio</title>
+    <link rel="preload" href="assets/fonts/inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/plus-jakarta-sans/PlusJakartaSans-Bold.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <style>
+        @font-face {
+            font-family: 'Inter';
+            src: url('./assets/fonts/inter/Inter-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            src: url('./assets/fonts/inter/Inter-Medium.woff2') format('woff2');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            src: url('./assets/fonts/inter/Inter-SemiBold.woff2') format('woff2');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Plus Jakarta Sans';
+            src: url('./assets/fonts/plus-jakarta-sans/PlusJakartaSans-Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: rgba(255, 255, 255, 0.45);
+            --card-border: rgba(255, 255, 255, 0.5);
+            --primary: #2563eb;
+            --primary-light: rgba(37, 99, 235, 0.1);
+            --text-main: #0f172a;
+            --text-muted: #475569;
+
+            --blob-1: #6366f1;
+            --blob-2: #a855f7;
+
+            --grad-1: hsla(210, 100%, 95%, 1);
+            --grad-2: hsla(220, 100%, 98%, 1);
+            --grad-3: hsla(230, 100%, 97%, 1);
+
+            --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, sans-serif;
+            min-height: 100vh;
+            min-height: 100dvh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Fluid Background Blobs */
+        .liquid-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -2;
+            background-color: var(--bg-color);
+            background-image:
+                radial-gradient(at 0% 0%, var(--grad-1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, var(--grad-3) 0, transparent 50%),
+                radial-gradient(at 50% 100%, var(--grad-2) 0, transparent 50%);
+            filter: blur(60px);
+        }
+
+        .liquid-bg::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3%3Ffilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.25;
+            filter: blur(80px);
+            will-change: transform;
+            animation: floatBlob 20s infinite alternate ease-in-out;
+        }
+
+        .blob:nth-child(1) {
+            width: 50vw;
+            height: 50vh;
+            background: var(--blob-1);
+            left: -10%;
+            top: -10%;
+        }
+
+        .blob:nth-child(2) {
+            width: 45vw;
+            height: 45vh;
+            background: var(--blob-2);
+            right: -10%;
+            bottom: -10%;
+            animation-delay: -10s;
+        }
+
+        @keyframes floatBlob {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            50% {
+                transform: translate(5%, 10%) scale(1.1);
+            }
+
+            100% {
+                transform: translate(-5%, -5%) scale(0.95);
+            }
+        }
+
+        /* Scanlines overlay */
+        .scanlines {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 10;
+            pointer-events: none;
+            opacity: 0.015;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%,
+                    rgba(0, 0, 0, 0.25) 50%);
+            background-size: 100% 4px;
+        }
+
+        /* Content Container */
+        .linktree-container {
+            max-width: 600px;
+            width: 100%;
+            padding: 60px 20px 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            z-index: 1;
+        }
+
+        /* Profile Header */
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 16px;
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        .avatar-wrapper {
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        .profile-avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            transition: var(--transition-smooth);
+        }
+
+        .avatar-wrapper:hover .profile-avatar {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 20px 30px -10px rgba(99, 102, 241, 0.3), 0 0 15px rgba(99, 102, 241, 0.2);
+        }
+
+        .profile-name {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.04em;
+            color: var(--text-main);
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .profile-bio {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            max-width: 480px;
+            font-weight: 500;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 4px;
+        }
+
+        .social-icon-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: var(--text-muted);
+            transition: var(--transition-smooth);
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .social-icon-btn svg,
+        .social-icon-btn i {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon-btn:hover {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+        }
+
+        .social-icon-btn:hover svg,
+        .social-icon-btn:hover i {
+            transform: scale(1.1);
+        }
+
+        /* Links List */
+        .links-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* General Card Design */
+        .link-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.02);
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.2),
+                    transparent);
+            transition: 0.5s;
+            pointer-events: none;
+        }
+
+        .link-card.clickable:hover::before {
+            left: 100%;
+        }
+
+        .link-card.clickable {
+            cursor: pointer;
+        }
+
+        .link-card.clickable:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.7);
+            border-color: rgba(37, 99, 235, 0.25);
+            box-shadow: 0 12px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        }
+
+        .link-card.clickable:active {
+            transform: translateY(-1px);
+        }
+
+        /* Thumbnail Visuals */
+        .link-image-wrap {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+            overflow: hidden;
+            flex-shrink: 0;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .link-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .link-card.clickable:hover .link-image {
+            transform: scale(1.08);
+        }
+
+        .link-icon-wrap {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary-light);
+            color: var(--primary);
+            border: 1px solid rgba(37, 99, 235, 0.15);
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.03);
+        }
+
+        .link-icon-wrap svg,
+        .link-icon-wrap i {
+            width: 26px;
+            height: 26px;
+        }
+
+        /* Link Card Text Content */
+        .link-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            text-align: left;
+        }
+
+        .link-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-main);
+            line-height: 1.2;
+        }
+
+        .link-description {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.45;
+            font-weight: 500;
+        }
+
+        .link-arrow {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            opacity: 0.4;
+            transition: var(--transition-smooth);
+            background: rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .link-arrow svg,
+        .link-arrow i {
+            width: 18px;
+            height: 18px;
+        }
+
+        .link-card.clickable:hover .link-arrow {
+            opacity: 1;
+            color: var(--primary);
+            background: #fff;
+            border-color: rgba(37, 99, 235, 0.2);
+            transform: translateX(3px);
+        }
+
+        /* Specific component styles */
+
+        /* Skills Card */
+        .skills-card {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            cursor: default;
+        }
+
+        .skills-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .skills-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            width: 100%;
+        }
+
+        .tags span {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--primary);
+            background: var(--primary-light);
+            border: 1px solid rgba(37, 99, 235, 0.15);
+            padding: 6px 14px;
+            border-radius: 100px;
+            transition: var(--transition-smooth);
+        }
+
+        .tags span:hover {
+            background: var(--primary);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* QR Code Card - Collapsible Drawer */
+        .qr-card {
+            flex-direction: column;
+            align-items: stretch;
+            padding: 0;
+        }
+
+        .qr-trigger {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            width: 100%;
+            color: inherit;
+            text-align: left;
+        }
+
+        .qr-drawer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.25);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .qr-card.expanded .qr-drawer {
+            max-height: 360px;
+            opacity: 1;
+        }
+
+        .qr-card.expanded .link-arrow {
+            transform: rotate(90deg);
+            opacity: 0.8;
+            color: var(--primary);
+        }
+
+        .qr-drawer-content {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .qr-container {
+            width: 180px;
+            height: 180px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .qr-container img,
+        .qr-container canvas {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+
+        .qr-caption {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            text-align: center;
+        }
+
+        /* Quote Card */
+        .quote-card {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 20px 24px;
+        }
+
+        .quote-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+        }
+
+        .quote-header svg,
+        .quote-header i {
+            width: 18px;
+            height: 18px;
+        }
+
+        .quote-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .quote-text {
+            font-size: 1.05rem;
+            font-style: italic;
+            color: var(--text-main);
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        /* Footer Section */
+        .footer-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 24px;
+            gap: 8px;
+        }
+
+        .footer-text {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .footer-heart {
+            color: #ef4444;
+            animation: heartPulse 1.5s infinite ease-in-out;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+        }
+
+        @keyframes heartPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* Responsiveness adjustments */
+        @media (max-width: 480px) {
+            .linktree-container {
+                padding: 40px 16px 30px 16px;
+                gap: 16px;
+            }
+
+            .profile-name {
+                font-size: 1.8rem;
+            }
+
+            .link-card {
+                padding: 12px;
+                gap: 12px;
+                border-radius: 16px;
+            }
+
+            .link-image-wrap,
+            .link-icon-wrap {
+                width: 48px;
+                height: 48px;
+                border-radius: 10px;
+            }
+
+            .link-icon-wrap svg,
+            .link-icon-wrap i {
+                width: 22px;
+                height: 22px;
+            }
+
+            .link-title {
+                font-size: 1.05rem;
+            }
+
+            .link-description {
+                font-size: 0.8rem;
+            }
+
+            .social-icon-btn {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        /* Collapsible Project Card styles */
+        .project-card {
+            flex-direction: column;
+            align-items: stretch;
+            padding: 0;
+        }
+
+        .project-trigger {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            width: 100%;
+            color: inherit;
+            text-align: left;
+            font-family: inherit;
+        }
+
+        .project-drawer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            background: rgba(255, 255, 255, 0.25);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .project-card.expanded .project-drawer {
+            max-height: 480px;
+            opacity: 1;
+        }
+
+        .project-card.expanded .link-arrow {
+            transform: rotate(90deg);
+            opacity: 0.8;
+            color: var(--primary);
+        }
+
+        .project-drawer-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* Gallery Grid inside drawers */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 100%;
+        }
+
+        .gallery-thumb-wrap {
+            aspect-ratio: 1 / 1;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: zoom-in;
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+            transition: var(--transition-smooth);
+        }
+
+        .gallery-thumb-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-thumb-wrap:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+            border-color: rgba(37, 99, 235, 0.2);
+        }
+
+        .gallery-thumb-wrap:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Drawer CTA visit button */
+        .drawer-cta-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 14px;
+            background: var(--primary);
+            color: #fff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+        }
+
+        .drawer-cta-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+        }
+
+        .drawer-cta-btn svg,
+        .drawer-cta-btn i {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* Full-screen Lightbox viewer */
+        .lightbox-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .lightbox-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .lightbox-content-wrap {
+            position: relative;
+            max-width: 90vw;
+            max-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .lightbox-img {
+            max-width: 100%;
+            max-height: 75vh;
+            object-fit: contain;
+            border-radius: 16px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transform: scale(0.95);
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .lightbox-overlay.active .lightbox-img {
+            transform: scale(1);
+        }
+
+        .lightbox-close-btn {
+            position: absolute;
+            top: -48px;
+            right: 0;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .lightbox-close-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        .lightbox-close-btn svg,
+        .lightbox-close-btn i {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="liquid-bg">
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+
+    <div class="scanlines"></div>
+
+    <main class="linktree-container">
+        <div id="profile-section" class="profile-header"></div>
+        <div id="links-container" class="links-list"></div>
+        <footer id="footer-section" class="footer-wrapper"></footer>
+    </main>
+
+    <!-- Lightbox Modal overlay -->
+    <div class="lightbox-overlay" id="lightbox">
+        <div class="lightbox-content-wrap">
+            <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close Lightbox">
+                <i data-lucide="x"></i>
+            </button>
+            <img src="" alt="Fullscreen View" class="lightbox-img" id="lightbox-img">
+        </div>
+    </div>
+
+    <!-- Dependencies -->
+    <script src="assets/js/lucide.min.js" defer></script>
+    <script src="assets/js/qrcode.min.js" defer></script>
+    <script src="data.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const profileSection = document.getElementById('profile-section');
+            const linksContainer = document.getElementById('links-container');
+            const footerSection = document.getElementById('footer-section');
+            const scanlines = document.querySelector('.scanlines');
+
+            // Category Color Mapping for ambient background shifts
+            const categoryColors = {
+                avatar: { b1: '#6366f1', b2: '#a855f7' },
+                project: { b1: '#0ea5e9', b2: '#22d3ee' },
+                qrcode: { b1: '#10b981', b2: '#34d399' },
+                skills: { b1: '#f59e0b', b2: '#ec4899' },
+                quote: { b1: '#8b5cf6', b2: '#d946ef' }
+            };
+
+            // Default blob colors
+            const defaultColors = categoryColors.avatar;
+
+            function initScanlines() {
+                if (scanlines && portfolioConfig.settings && portfolioConfig.settings.showScanlines === false) {
+                    scanlines.style.display = 'none';
+                }
+            }
+
+            function renderProfile(profile) {
+                if (!profileSection || !profile) return;
+
+                const avatarHtml = profile.email ?
+                    `<a href="${profile.email}" class="avatar-wrapper" aria-label="Contact ${profile.name}">
+                        <img src="${profile.image}" alt="${profile.name}" class="profile-avatar">
+                     </a>` :
+                    `<div class="avatar-wrapper">
+                        <img src="${profile.image}" alt="${profile.name}" class="profile-avatar">
+                     </div>`;
+
+                const titleHtml = profile.name ? `<h1 class="profile-name">${profile.name}</h1>` : '';
+                const descHtml = profile.bio ? `<p class="profile-bio">${profile.bio}</p>` : '';
+
+                let socialsHtml = '';
+                if (profile.socials && profile.socials.length > 0) {
+                    socialsHtml = `
+                        <div class="social-links">
+                            ${profile.socials.map(s => `
+                                <a href="${s.url}" target="_blank" class="social-icon-btn" aria-label="${s.icon} Link">
+                                    <i data-lucide="${s.icon}"></i>
+                                </a>
+                            `).join('')}
+                        </div>
+                    `;
+                }
+
+                profileSection.innerHTML = avatarHtml + titleHtml + descHtml + socialsHtml;
+            }
+
+            function renderLinkList(links) {
+                if (!linksContainer || !links) return;
+                linksContainer.innerHTML = '';
+
+                links.forEach((card, index) => {
+                    if (card.isVisible === false) return;
+
+                    const cardEl = document.createElement('div');
+                    cardEl.className = 'link-card-wrapper';
+                    cardEl.style.width = '100%';
+
+                    if (card.type === 'project') {
+                        const hasImages = card.images && card.images.length > 0;
+                        if (hasImages) {
+                            const gridHtml = card.images.map(img => `
+                                <div class="gallery-thumb-wrap" data-img-src="${img}">
+                                    <img src="${img}" alt="${card.title} photo" loading="lazy">
+                                </div>
+                            `).join('');
+
+                            cardEl.innerHTML = `
+                                <div class="link-card project-card" id="project-card-${index}" data-type="project">
+                                    <button class="project-trigger" aria-expanded="false" aria-controls="project-drawer-${index}">
+                                        <div class="link-image-wrap">
+                                            <img src="${card.image}" alt="${card.title}" class="link-image" loading="lazy">
+                                        </div>
+                                        <div class="link-info">
+                                            <h2 class="link-title">${card.title}</h2>
+                                            <p class="link-description">${card.description}</p>
+                                        </div>
+                                        <div class="link-arrow">
+                                            <i data-lucide="chevron-right"></i>
+                                        </div>
+                                    </button>
+                                    <div class="project-drawer" id="project-drawer-${index}">
+                                        <div class="project-drawer-content">
+                                            <div class="gallery-grid">
+                                                ${gridHtml}
+                                            </div>
+                                            <a href="${card.url}" target="_blank" class="drawer-cta-btn">
+                                                <span>Visit Project Link</span>
+                                                <i data-lucide="external-link"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        } else {
+                            cardEl.innerHTML = `
+                                <a href="${card.url}" target="_blank" class="link-card clickable" data-type="project">
+                                    <div class="link-image-wrap">
+                                        <img src="${card.image}" alt="${card.title}" class="link-image" loading="lazy">
+                                    </div>
+                                    <div class="link-info">
+                                        <h2 class="link-title">${card.title}</h2>
+                                        <p class="link-description">${card.description}</p>
+                                    </div>
+                                    <div class="link-arrow">
+                                        <i data-lucide="chevron-right"></i>
+                                    </div>
+                                </a>
+                            `;
+                        }
+                    } else if (card.type === 'skills') {
+                        const tagsHtml = (card.tags && card.tags.length > 0) ?
+                            `<div class="tags">${card.tags.map(tag => `<span>${tag}</span>`).join('')}</div>` : '';
+
+                        cardEl.innerHTML = `
+                            <div class="link-card skills-card" data-type="skills">
+                                <div class="skills-header">
+                                    <div class="link-icon-wrap">
+                                        <i data-lucide="database"></i>
+                                    </div>
+                                    <h2 class="skills-title">${card.title}</h2>
+                                </div>
+                                ${tagsHtml}
+                            </div>
+                        `;
+                    } else if (card.type === 'qrcode') {
+                        cardEl.innerHTML = `
+                            <div class="link-card qr-card" id="qr-card-${index}" data-type="qrcode">
+                                <button class="qr-trigger" aria-expanded="false" aria-controls="qr-drawer-${index}">
+                                    <div class="link-icon-wrap">
+                                        <i data-lucide="qr-code"></i>
+                                    </div>
+                                    <div class="link-info">
+                                        <h2 class="link-title">${card.title}</h2>
+                                        <p class="link-description">${card.description}</p>
+                                    </div>
+                                    <div class="link-arrow">
+                                        <i data-lucide="chevron-right"></i>
+                                    </div>
+                                </button>
+                                <div class="qr-drawer" id="qr-drawer-${index}">
+                                    <div class="qr-drawer-content">
+                                        <div class="qr-container" id="qr-container-${index}"></div>
+                                        <p class="qr-caption">Scan to open or view on mobile</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    } else if (card.type === 'quote') {
+                        cardEl.innerHTML = `
+                            <div class="link-card quote-card" data-type="quote">
+                                <div class="quote-header">
+                                    <i data-lucide="book-open"></i>
+                                    <span class="quote-title">${card.title}</span>
+                                </div>
+                                <p class="quote-text">${card.text}</p>
+                            </div>
+                        `;
+                    }
+
+                    linksContainer.appendChild(cardEl);
+
+                    // Dynamically generate QR code if it's the qrcode card
+                    if (card.type === 'qrcode') {
+                        const qrContainer = cardEl.querySelector(`#qr-container-${index}`);
+                        if (qrContainer && window.QRCode) {
+                            new QRCode(qrContainer, {
+                                text: card.url,
+                                width: 160,
+                                height: 160,
+                                colorDark: "#0f172a",
+                                colorLight: "#ffffff",
+                                correctLevel: QRCode.CorrectLevel.H
+                            });
+                        }
+                    }
+                });
+
+                // Set up collapsible QR drawer click listener
+                const qrCards = document.querySelectorAll('.qr-card');
+                qrCards.forEach(qrCard => {
+                    const trigger = qrCard.querySelector('.qr-trigger');
+                    trigger.addEventListener('click', () => {
+                        const isExpanded = qrCard.classList.contains('expanded');
+                        qrCard.classList.toggle('expanded', !isExpanded);
+                        trigger.setAttribute('aria-expanded', !isExpanded);
+                    });
+                });
+
+                // Set up collapsible Project drawer click listener
+                const projectCards = document.querySelectorAll('.project-card');
+                projectCards.forEach(projCard => {
+                    const trigger = projCard.querySelector('.project-trigger');
+                    trigger.addEventListener('click', () => {
+                        const isExpanded = projCard.classList.contains('expanded');
+                        projCard.classList.toggle('expanded', !isExpanded);
+                        trigger.setAttribute('aria-expanded', !isExpanded);
+                    });
+                });
+
+                // Ambient Background Color Shifts on Hover
+                if (portfolioConfig.settings && portfolioConfig.settings.vibrantMode !== false) {
+                    const allCards = document.querySelectorAll('.link-card, .social-icon-btn, .avatar-wrapper');
+                    allCards.forEach(el => {
+                        el.addEventListener('mouseenter', () => {
+                            const type = el.getAttribute('data-type') ||
+                                (el.classList.contains('social-icon-btn') ? 'avatar' : null) ||
+                                (el.classList.contains('avatar-wrapper') ? 'avatar' : 'project');
+                            const colors = categoryColors[type] || defaultColors;
+                            updateBackgroundColors(colors.b1, colors.b2);
+                        });
+
+                        el.addEventListener('mouseleave', () => {
+                            updateBackgroundColors(defaultColors.b1, defaultColors.b2);
+                        });
+                    });
+                }
+            }
+
+            function renderFooter(footerText) {
+                if (!footerSection || !footerText) return;
+
+                footerSection.innerHTML = `
+                    <div class="footer-text">
+                        <span>${footerText}</span>
+                        <i data-lucide="heart" class="footer-heart"></i>
+                    </div>
+                `;
+            }
+
+            function updateBackgroundColors(b1, b2) {
+                document.documentElement.style.setProperty('--blob-1', b1);
+                document.documentElement.style.setProperty('--blob-2', b2);
+            }
+
+            // Lightbox Viewer functionality
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxClose = document.getElementById('lightbox-close');
+
+            function initLightbox() {
+                if (!lightbox || !lightboxImg || !lightboxClose) return;
+
+                linksContainer.addEventListener('click', (e) => {
+                    const thumbWrap = e.target.closest('.gallery-thumb-wrap');
+                    if (thumbWrap) {
+                        e.preventDefault();
+                        const imgSrc = thumbWrap.getAttribute('data-img-src');
+                        if (imgSrc) {
+                            lightboxImg.src = imgSrc;
+                            lightbox.classList.add('active');
+                        }
+                    }
+                });
+
+                const closeLightbox = () => {
+                    lightbox.classList.remove('active');
+                    setTimeout(() => {
+                        lightboxImg.src = '';
+                    }, 300);
+                };
+
+                lightboxClose.addEventListener('click', closeLightbox);
+                lightbox.addEventListener('click', (e) => {
+                    if (e.target === lightbox) {
+                        closeLightbox();
+                    }
+                });
+
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                        closeLightbox();
+                    }
+                });
+            }
+
+            function init() {
+                if (typeof portfolioConfig === 'undefined') {
+                    console.error('portfolioConfig is not loaded. Make sure data.js is loaded first.');
+                    return;
+                }
+
+                initScanlines();
+                initLightbox();
+
+                // Render sections
+                renderProfile(portfolioConfig.profile);
+                renderLinkList(portfolioConfig.links);
+                if (portfolioConfig.profile) {
+                    renderFooter(portfolioConfig.profile.footerText);
+                }
+
+                // Initialize Lucide icons
+                if (window.lucide) {
+                    lucide.createIcons();
+                }
+            }
+
+            init();
+        });
+    </script>
+</body>
+
+</html>
