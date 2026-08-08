@@ -1,55 +1,76 @@
-# JAI Portfolio 2026
+# Jai Ganesh — Portfolio
 
-A high-performance, minimalist, and ultra-lightweight static portfolio site inspired by Linktree. Designed for speed, responsiveness, and a premium editorial visual design. Powered dynamically by a single content file.
+A minimal, professional single-page portfolio. Zero build step, zero external CDNs — just static HTML, CSS, and JavaScript, all content driven from one config file.
 
-## 🚀 Key Features
+## Features
 
-- **Self-Contained Core:** All page structure, styles, animations, and scripts are combined into a single, optimized [index.html](file:///c:/Users/Jaiga/Projects/github/jaigansa.github.io/index.html) file.
-- **Clean Content Separation:** The entire portfolio content is decoupled and loaded dynamically from [data.js](file:///c:/Users/Jaiga/Projects/github/jaigansa.github.io/data.js).
-- **Ultra-Lightweight & Local:** Zero external CDNs or network requests at runtime. All typography assets (Inter, Plus Jakarta Sans) and helper scripts (Lucide Icons, QR Code Generator) are hosted locally within the `assets/` directory.
-- **Premium Glassmorphic UX:** Sleek frosted-glass list widgets with subtle borders, hover-state reflections, and floating mesh radial blobs that dynamically transition colors based on user hover states.
-- **Interactive Widgets:** Includes collapsible QR code generation drawer, list badge widgets for tech skills, quote panels, and profile link headers.
+- **Single page, no framework** — pure HTML5 + CSS3 + vanilla JS
+- **Data-driven** — all content lives in [data.js](data.js)
+- **Fully local** — Inter font and Lucide icons bundled in `assets/`
+- **Light & dark mode** — follows the system `prefers-color-scheme`
+- **Photo lightbox** — project galleries with keyboard navigation
 
----
+## Sections
 
-## 🛠️ Technology Stack
+- **Hero** — avatar, socials, role, tagline, and CTAs
+- **Selected Work** — grid of projects; click the image for a gallery lightbox, the title for the project link
+- **Expertise** — skill tags
+- **Contact** — email form (opens a prefilled mail)
+- **Quote** — Thirukkural verse with explanation
 
-- **HTML5 & Vanilla CSS3:** Dynamic variables, custom font faces, responsive flexbox/grid layout structures, and backdrop filters.
-- **Vanilla JavaScript:** Clean DOM parsing, event listeners, and configuration mappings.
-- **Lucide Icons:** Standardized, localized vector icons.
-- **QRCode.js:** Local client-side vector QR code rendering.
+## Content Management
 
----
+Edit [data.js](data.js):
 
-## 📂 Content Management & Configuration
-
-To update details on the page (links, tags, socials, descriptions), simply edit the `cards` configuration array inside [data.js](file:///c:/Users/Jaiga/Projects/github/jaigansa.github.io/data.js).
-
-### Card Types Available:
-1. `avatar`: Renders the top profile introducing you (social buttons, bio description, name, profile image).
-2. `project`: Renders standard wide link cards containing a project visual thumbnail on the left and chevron buttons.
-3. `skills`: Lists tag arrays as chip badges.
-4. `qrcode`: Client-side generated QR code drawer.
-5. `quote`: Beautiful editorial quotation block.
-
-### Example Card configuration inside `data.js`:
-```javascript
-{
-    id: "project-1",
-    type: "project",
-    isVisible: true,
-    title: "PROJECT TITLE",
-    description: "Detailed description of your build here...",
-    image: "./assets/images/photos/your-image.webp",
-    link: "https://your-external-link.com"
-}
+```js
+const portfolioConfig = {
+    // Paste your Formspree form ID here to receive form submissions
+    // directly in your inbox. Leave "" to fall back to a mailto: link.
+    contact: { formspreeId: "" },
+    profile: {
+        name: "Jai Ganesh",
+        role: "Designer & Fabricator",
+        bio: "...",
+        image: "./assets/images/profile.jpg",
+        resume: { label: "Download CV", url: "./assets/resume/resume.pdf" },
+        socials: [
+            { icon: "git-compare", label: "GitHub", url: "https://github.com/..." }
+        ]
+    },
+    links: [
+        { type: "project", title: "...", description: "...",
+          image: "./assets/images/projects/....webp",
+          url: "https://...", images: ["./assets/images/projects/a.webp", "..."] },
+        { type: "skills", title: "Expertise", skills: [{ name: "FreeCAD", level: 90 }] },
+        { type: "email", url: "mailto:you@example.com" },
+        { type: "quote", title: "Thirukkural", text: "...", explanation: "...", url: "https://..." }
+    ]
+};
 ```
 
----
+Drop your resume PDF at `assets/resume/resume.pdf` (or change the `url` in `profile.resume`).
+Add `robots.txt` and `sitemap.xml` if you host under the default `https://jaigansa.github.io` URL.
 
-## 🎨 Local Verification
+## File Structure
 
-To run the site locally:
-1. Open the repository directory.
-2. Spin up a local static server (e.g. `python -m http.server 8080`).
-3. Navigate to `http://localhost:8080` in your web browser.
+```
+├── index.html            # page, inline styles & scripts
+├── data.js               # all content & config
+├── robots.txt
+├── sitemap.xml
+└── assets/
+    ├── fonts/inter/      # self-hosted typefaces
+    ├── images/
+    │   ├── profile.jpg
+    │   └── projects/     # project cover photos & gallery images
+    ├── lib/              # third-party libraries (lucide, qrcode)
+    └── resume/           # downloadable CV
+```
+
+## Run Locally
+
+```sh
+python3 -m http.server 8080
+```
+
+Then open `http://localhost:8080`.
