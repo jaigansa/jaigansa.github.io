@@ -1,36 +1,30 @@
 /**
  * PORTFOLIO CONFIGURATION
- * 
+ *
  * Update this file to customize your profile details, links, skills, and widgets.
  */
 
 const portfolioConfig = {
     // Top Profile Header configuration
     profile: {
-        name: "J A I G A N E S H",
-        bio: "WELCOME TO THE MY WORLD",
+        name: "Jai Ganesh",
+        bio: "Designer & maker. I turn ideas into 3D models, real fabricated products, and AI-assisted apps.",
         image: "./assets/images/profile.jpg",
         email: "mailto:jaigansa+talk@gmail.com",
         socials: [
-            { icon: "git-compare", url: "https://github.com/jaigansa" },
-            { icon: "x", url: "https://x.com/jaigansa" },
-            { icon: "message-circle", url: "https://signal.me/#u/jaiganesh.94" }
+            { icon: "git-compare", label: "GitHub", url: "https://github.com/jaigansa" },
+            { icon: "x", label: "X (Twitter)", url: "https://x.com/jaigansa" },
+            { icon: "message-circle", label: "Signal", url: "https://signal.me/#u/jaiganesh.94" }
         ],
         footerText: "Thank you for visiting my portfolio."
-    },
-
-    // Custom configuration parameters
-    settings: {
-        showScanlines: true,
-        vibrantMode: true
     },
 
     // Vertical Stack components & links
     links: [
         {
             type: "project",
-            title: "DESIGN",
-            description: "Design using FreeCAD.",
+            title: "Design",
+            description: "Mechanical design with FreeCAD — from concept to detailed 3D models.",
             image: "./assets/images/photos/sji.webp",
             url: "https://share.google/tXY59hX5FcVRGci2A",
             images: [
@@ -41,8 +35,8 @@ const portfolioConfig = {
         },
         {
             type: "project",
-            title: "REAL PRODUCT",
-            description: "Metal Fabrication & Truck body works.",
+            title: "Real Product",
+            description: "Metal fabrication and truck body work, built to last.",
             image: "./assets/images/photos/jsr.webp",
             url: "https://share.google/ipbDv87v8gRQrU5AV",
             images: [
@@ -53,8 +47,8 @@ const portfolioConfig = {
         },
         {
             type: "project",
-            title: "APPLICATIONS",
-            description: "Using AI.",
+            title: "Applications",
+            description: "Small, useful apps built with AI assistance.",
             image: "./assets/images/photos/apps.webp",
             url: "https://jaigansa.github.io/apps",
             images: [
@@ -65,20 +59,20 @@ const portfolioConfig = {
         },
         {
             type: "project",
-            title: "GAMES",
-            description: "Try it.",
+            title: "Games",
+            description: "A few quick, playable games I built for fun.",
             image: "./assets/images/photos/games.webp",
             url: "https://jaigansa.github.io/games"
         },
         {
             type: "skills",
             title: "Expertise",
-            tags: ["INKSCAPE", "FREECAD", "BELNDER", "GIMP", "KRITA", "LINUX"]
+            tags: ["Inkscape", "FreeCAD", "Blender", "GIMP", "Krita", "Linux"]
         },
         {
             type: "qrcode",
             title: "Contact",
-            description: "Scan this code.",
+            description: "Scan this code to reach me.",
             url: "mailto:jaigansa+talk@gmail.com"
         },
         {
